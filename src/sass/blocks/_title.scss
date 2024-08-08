@@ -2,7 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding-top: 100px;
+  padding-bottom: 30px;
+  &.pt120 {
+    padding-top: 120px;
+  }
 }
 
 .title {
@@ -14,7 +19,6 @@
 }
 .subtitle {
   max-width: 880px;
-  padding-top: 20px;
   font-size: 24px;
   opacity: .8;
 }

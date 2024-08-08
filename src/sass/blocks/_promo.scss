@@ -1,7 +1,8 @@
 .promo {
   &__wrapper {
     background: url("../images/promo/background.png") center no-repeat;
-    min-height: 100vh;
+    height: 100vh;
+    position: relative;
   }
   &__title {
     padding-top: 110px;
@@ -17,26 +18,27 @@
       color: #FF971B;
     }
   }
-  &__scroll {
-    display: flex;
-    flex-direction: column;
-    gap: 12.5px;
-    width: 180px;
+}
+
+.promo-scroll {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12.5px;
+  width: 180px;
+  &__mouse {
     margin-inline: auto;
-    margin-top: 327px;
-    &_mouse {
-      margin-inline: auto;
-      width: 28px;
-    }
-    &_arrow {
-      margin-inline: auto;
-      height: 28px;
-    }
-    &_text {
-      font-size: 18px;
-      font-weight: 600;
-      text-align: center;
-      color: #000000;
-    }
+    width: 28px;
+  }
+  &__arrow {
+    margin-inline: auto;
+    height: 28px;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
   }
 }
