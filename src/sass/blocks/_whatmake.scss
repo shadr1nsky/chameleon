@@ -1,0 +1,28 @@
+.whatmake {
+  &__items {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    justify-content: center;
+    gap: 20px;
+  }
+  &__item {
+    width: 100%;
+    height: 339px;
+    border-radius: 30px;
+    background-color: rgb(249, 249, 249);
+    &:hover {
+      background: linear-gradient(135.85deg, rgb(159, 225, 31) 5.677%,rgb(255, 221, 72) 62.201%,rgb(255, 146, 23) 104.807%);
+    }
+    &_icon {
+      margin-top: 20px;
+      width: 120px;
+      height: 120px;
+    }
+    &_descr {
+      padding: 16px;
+      font-size: 16px;
+      line-height: 120%;
+    }
+  }
+}
