@@ -80,20 +80,20 @@
         </section>
 
         <section class="section carousel">
-            <div class="carousel__wrapper">
-                <div class="carousel__items">
-                    <div class="carousel-item">Регресс</div>
-                    <div class="carousel-item">Api</div>
-                    <div class="carousel-item">Автотесты</div>
-                    <div class="carousel-item">Тест-Кейсы</div>
-                    <div class="carousel-item">Интеграция</div>
-                    <div class="carousel-item">Нагрузочное</div>
-                    <div class="carousel-item">Ручное тестирование</div>
+            <div class="carousel-swiper swiperCarousel">
+                <div class="carousel-swiper__wrapper swiper-wrapper">
+                    <div class="carousel-item swiper-slide">Регресс</div>
+                    <div class="carousel-item swiper-slide">Api</div>
+                    <div class="carousel-item swiper-slide">Автотесты</div>
+                    <div class="carousel-item swiper-slide">Тест-Кейсы</div>
+                    <div class="carousel-item swiper-slide">Интеграция</div>
+                    <div class="carousel-item swiper-slide">Нагрузочное</div>
+                    <div class="carousel-item swiper-slide">Ручное тестирование</div>
                 </div>
             </div>
         </section>
 
-        <section class="outstaffwork">
+        <section class="section outstaffwork">
             <div class="container">
                 <div class="outstaffwork__wrapper">
                     <div class="top pt120">
@@ -148,7 +148,7 @@
                         <img class="title-icon" src="icons/title/lines.svg" alt="">
                     </div>
 
-                    <div class="clients-swiper swiper">
+                    <div class="clients-swiper swiperClients">
                         <div class="clients-swiper__wrapper swiper-wrapper">
                             <div class="clients-item swiper-slide">
                                 <div class="clients-item__icon">
@@ -252,9 +252,9 @@
                         <img class="title-icon" src="icons/title/lines.svg" alt="">
                     </div>
 
-                    <div class="reviews-swiper swiper">
+                    <div class="reviews-swiper swiperReviews">
                         <div class="reviews-swiper__wrapper swiper-wrapper">
-                            <div class="reviews-item swiper-slide">
+                            <div class="reviews-item star5 swiper-slide">
                                 <div class="reviews-item__quotes">
                                     <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
@@ -262,10 +262,169 @@
                                 </div>
                                 <div class="reviews-item__title">Best on the market</div>
                                 <div class="reviews-item__rating">
-                                    <div class="reviews-item__rating_stars"></div>
+                                    <div class="reviews-item__rating_stars">
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                    </div>
                                     <div class="reviews-item__rating_date">2 days ago</div>
                                 </div>
                                 <div class="reviews-item__descr">I love this product because the support is great. Please ...</div>
+                            </div>
+
+                            <div class="reviews-item star5 swiper-slide">
+                                <div class="reviews-item__quotes">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
+                                    </svg>
+                                </div>
+                                <div class="reviews-item__title">Best on the market</div>
+                                <div class="reviews-item__rating">
+                                    <div class="reviews-item__rating_stars">
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                    </div>
+                                    <div class="reviews-item__rating_date">2 days ago</div>
+                                </div>
+                                <div class="reviews-item__descr">I love this product because the support is great. Please ...</div>
+                            </div>
+
+                            <div class="reviews-item star5 swiper-slide">
+                                <div class="reviews-item__quotes">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
+                                    </svg>
+                                </div>
+                                <div class="reviews-item__title">Best on the market</div>
+                                <div class="reviews-item__rating">
+                                    <div class="reviews-item__rating_stars">
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                    </div>
+                                    <div class="reviews-item__rating_date">2 days ago</div>
+                                </div>
+                                <div class="reviews-item__descr">I love this product because the support is great. Please ...</div>
+                            </div>
+
+                            <div class="reviews-item star5 swiper-slide">
+                                <div class="reviews-item__quotes">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
+                                    </svg>
+                                </div>
+                                <div class="reviews-item__title">Best on the market</div>
+                                <div class="reviews-item__rating">
+                                    <div class="reviews-item__rating_stars">
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                    </div>
+                                    <div class="reviews-item__rating_date">2 days ago</div>
+                                </div>
+                                <div class="reviews-item__descr">I love this product because the support is great. Please ...</div>
+                            </div>
+
+                            <div class="reviews-item star5 swiper-slide">
+                                <div class="reviews-item__quotes">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
+                                    </svg>
+                                </div>
+                                <div class="reviews-item__title">Best on the market</div>
+                                <div class="reviews-item__rating">
+                                    <div class="reviews-item__rating_stars">
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                    </div>
+                                    <div class="reviews-item__rating_date">2 days ago</div>
+                                </div>
+                                <div class="reviews-item__descr">I love this product because the support is great. Please ...</div>
+                            </div>
+
+                            <div class="reviews-item star5 swiper-slide">
+                                <div class="reviews-item__quotes">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
+                                    </svg>
+                                </div>
+                                <div class="reviews-item__title">Best on the market</div>
+                                <div class="reviews-item__rating">
+                                    <div class="reviews-item__rating_stars">
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                    </div>
+                                    <div class="reviews-item__rating_date">2 days ago</div>
+                                </div>
+                                <div class="reviews-item__descr">I love this product because the support is great. Please ...</div>
+                            </div>
+
+                            <div class="reviews-item star5 swiper-slide">
+                                <div class="reviews-item__quotes">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
+                                    </svg>
+                                </div>
+                                <div class="reviews-item__title">Best on the market</div>
+                                <div class="reviews-item__rating">
+                                    <div class="reviews-item__rating_stars">
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                    </div>
+                                    <div class="reviews-item__rating_date">2 days ago</div>
+                                </div>
+                                <div class="reviews-item__descr">I love this product because the support is great. Please ...</div>
+                            </div>
+
+                            <div class="reviews-item star5 swiper-slide">
+                                <div class="reviews-item__quotes">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
+                                    </svg>
+                                </div>
+                                <div class="reviews-item__title">Best on the market</div>
+                                <div class="reviews-item__rating">
+                                    <div class="reviews-item__rating_stars">
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                        <div class="reviews-item__rating_star"></div>
+                                    </div>
+                                    <div class="reviews-item__rating_date">2 days ago</div>
+                                </div>
+                                <div class="reviews-item__descr">I love this product because the support is great. Please ...</div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-swiper__nav">
+                            <div class="reviews-swiper__nav_button-prev swiper-button-prev">
+                                <svg width="16.004028" height="13.321289" viewBox="0 0 16.004 13.3213" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path id="Arrow Prev" d="M3.41 5.66L7.36 1.71C7.76 1.31 7.76 0.69 7.36 0.29C6.97 -0.1 6.34 -0.1 5.95 0.29L0.29 5.95C-0.1 6.34 -0.1 6.97 0.29 7.36L5.95 13.02C6.34 13.42 6.97 13.42 7.36 13.02C7.76 12.62 7.76 12 7.36 11.61L3.41 7.66L15 7.66C15.56 7.66 16 7.22 16 6.66C16 6.1 15.56 5.66 15 5.66L3.41 5.66Z" fill="#191B20" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="reviews-swiper__nav_button-next swiper-button-next">
+                                <svg width="16.004028" height="13.321289" viewBox="0 0 16.004 13.3213" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path id="Arrow Next" d="M12.58 5.66L8.63 1.71C8.24 1.31 8.24 0.69 8.63 0.29C9.03 -0.1 9.65 -0.1 10.05 0.29L15.7 5.95C16.1 6.34 16.1 6.97 15.7 7.36L10.05 13.02C9.65 13.42 9.03 13.42 8.63 13.02C8.24 12.62 8.24 12 8.63 11.61L12.58 7.66L1 7.66C0.43 7.66 0 7.22 0 6.66C0 6.1 0.43 5.66 1 5.66L12.58 5.66Z" fill="#191B20" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                </svg>
                             </div>
                         </div>
                     </div>
