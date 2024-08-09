@@ -1,15 +1,46 @@
 .howwork {
   &__items {
     display: grid;
-    //grid-template-columns: 465px 409px 56px 344px;
-    //grid-template-rows: 300px 230px;
+    grid-template-columns: minmax(300px, 465px) minmax(200px, 386px) 56px minmax(200px, 344px);
+    grid-template-rows: 300px 230px;
     grid-template-areas:
-    'big mini1 mini2'
-    'big mini3 mini4';
+    'big mini1 mini1w mini2'
+    'big mini3 mini4 mini4w';
     gap: 23px;
   }
-  &__item {
-    width: 100%;
-    height: 100%;
+}
+
+.howwork-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  border-radius: 36px;
+  padding: 20px;
+  overflow: hidden;
+  &.big {
+    background: url(../images/howwork/big.png) center / cover no-repeat;
+    grid-area: big;
+  }
+  &.mini1 {
+    background: url(../images/howwork/mini1.png) center / cover no-repeat;
+    grid-column: mini1 / mini1w;
+  }
+  &.mini2 {
+    background: url(../images/howwork/mini2.png) center / cover no-repeat;
+    grid-area: mini2;
+  }
+  &.mini3 {
+    background: url(../images/howwork/mini3.png) center / cover no-repeat;
+    grid-area: mini3;
+  }
+  &.mini4 {
+    background: url(../images/howwork/mini4.png) center / cover no-repeat;
+    grid-column: mini4 / mini4w;
+  }
+  &__descr {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
   }
 }
