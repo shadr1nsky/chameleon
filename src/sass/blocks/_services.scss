@@ -83,6 +83,9 @@
       padding: 30px;
       max-width: 590px;
       position: absolute;
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      background-color: #F4F4F480;
     }
   }
 }
