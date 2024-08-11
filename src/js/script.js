@@ -33,11 +33,23 @@ var swiper = new Swiper('.swiperClients', {
 
 var swiper = new Swiper('.swiperReviews', {
     direction: 'horizontal',
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 20,
 
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    breakpoints: {
+        1200: {
+            slidesPerView: 4,
+        },
+        900: {
+            slidesPerView: 3,
+        },
+        600: {
+            slidesPerView: 2,
+        },
+    }
 });
