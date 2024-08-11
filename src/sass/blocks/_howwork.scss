@@ -4,8 +4,8 @@
     grid-template-columns: minmax(300px, 465px) minmax(200px, 386px) 56px minmax(200px, 344px);
     grid-template-rows: 300px 230px;
     grid-template-areas:
-    'big mini1 mini1w mini2'
-    'big mini3 mini4 mini4w';
+    'item1 item2 wide item3'
+    'item1 item4 wide item5';
     gap: 23px;
   }
 }
@@ -18,27 +18,28 @@
   border-radius: 36px;
   padding: 20px;
   overflow: hidden;
-  &.big {
+  &.item1 {
     background: url(../images/howwork/big.png) center / cover no-repeat;
-    grid-area: big;
+    grid-area: item1;
   }
-  &.mini1 {
+  &.item2 {
     background: url(../images/howwork/mini1.png) center / cover no-repeat;
-    grid-column: mini1 / mini1w;
+    grid-column: item2 / wide;
   }
-  &.mini2 {
+  &.item3 {
     background: url(../images/howwork/mini2.png) center / cover no-repeat;
-    grid-area: mini2;
+    grid-area: item3;
   }
-  &.mini3 {
+  &.item4 {
     background: url(../images/howwork/mini3.png) center / cover no-repeat;
-    grid-area: mini3;
+    grid-area: item4;
   }
-  &.mini4 {
+  &.item5 {
     background: url(../images/howwork/mini4.png) center / cover no-repeat;
-    grid-column: mini4 / mini4w;
+    grid-column: wide / item5;
   }
   &__descr {
+    width: 100%;
     background-color: white;
     border-radius: 20px;
     padding: 20px;

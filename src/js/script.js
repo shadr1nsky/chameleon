@@ -1,3 +1,13 @@
+var swiper = new Swiper('.swiperPromo', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 1000,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+});
+
 var swiper = new Swiper('.swiperCarousel', {
     direction: 'horizontal',
 slidesPerView: '6',
@@ -11,8 +21,14 @@ slidesPerView: '6',
 
 var swiper = new Swiper('.swiperClients', {
     direction: 'horizontal',
-    slidesPerView: 'auto',
+    slidesPerView: 1,
     spaceBetween: 20,
+
+    breakpoints: {
+        430: {
+            slidesPerView: 'auto',
+        },
+    }
 });
 
 var swiper = new Swiper('.swiperReviews', {

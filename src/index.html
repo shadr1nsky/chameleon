@@ -16,7 +16,7 @@
 </head>
 <body>
 <header>
-    <nav class="nav hidden">
+    <nav class="nav">
         <div class="nav__wrapper">
             <div class="nav-logo">
                 <img src="icons/logo.svg" alt="">
@@ -34,9 +34,19 @@
 </header>
 
 <main>
-    <section class="hidden section promo">
-        <div class="promo__wrapper">
-            <h1 class="promo__title"><span>Функциональное тестирование</span> Вашего приложения</h1>
+    <section class=" section--wide promo">
+            <div class="promo__wrapper">
+                <div class="promo-title swiperPromo">
+                    <div class="promo-title__wrapper swiper-wrapper">
+                        <h1 class="promo-title-item swiper-slide">Функциональное тестирование</h1>
+                        <h1 class="promo-title-item swiper-slide">Автоматизированное тестирование</h1>
+                        <h1 class="promo-title-item swiper-slide">Нагрузочное тестирование</h1>
+                        <h1 class="promo-title-item swiper-slide">API тестирование</h1>
+                        <h1 class="promo-title-item swiper-slide">Аудит безопасности</h1>
+                    </div>
+
+                    Вашего приложения
+                </div>
 
             <a class="promo-scroll" href="#whatmake">
                 <img class="promo-scroll__mouse" src="icons/promo/mouse.svg" alt="">
@@ -46,9 +56,8 @@
         </div>
     </section>
 
-    <section class="hidden section whatmake" id="whatmake">
-        <div class="container">
-            <div class="top pt100">
+    <section class=" section whatmake" id="whatmake">
+        <div class="top">
                 <h2 class="title">Что мы делаем</h2>
                 <img class="title-icon" src="icons/title/lines.svg" alt="">
             </div>
@@ -85,16 +94,14 @@
 
                     <div class="whatmake-item">
                         <img class="whatmake-item__icon" src="icons/whatmake/4.svg" alt="">
-                        <div class="whatmake-item__descr">Свяжитесь с нами сегодня, чтобы узнать больше о наших услугах
-                            и начать совместную работу над тестированием вашего программного обеспечения.
-                        </div>
+                        <div class="whatmake-item__descr">Свяжитесь с нами сегодня, чтобы узнать больше о наших услугах и начать совместную работу над тестированием вашего программного обеспечения.</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="hidden section carousel">
+    <section class=" section carousel">
         <div class="carousel-swiper swiperCarousel">
             <div class="carousel-swiper__wrapper swiper-wrapper">
                 <div class="carousel-item swiper-slide">Регресс</div>
@@ -104,6 +111,8 @@
                 <div class="carousel-item swiper-slide">Интеграция</div>
                 <div class="carousel-item swiper-slide">Нагрузочное</div>
                 <div class="carousel-item swiper-slide">Ручное тестирование</div>
+                <div class="carousel-item swiper-slide">Мобильное</div>
+                <div class="carousel-item swiper-slide">Юзабилити</div>
             </div>
         </div>
     </section>
@@ -111,7 +120,7 @@
     <section class="section howdo">
         <div class="howdo-container">
             <div class="howdo-container__wrapper">
-                <div class="howdo-container__item howdo-container-item rounded">
+                <div class="howdo-container__item howdo-container-item bordered">
                     <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
                     <p class="howdo-container-item__text">
                         Планирование тестирования:
@@ -120,7 +129,7 @@
                         проведения тестов.
                     </p>
                 </div>
-                <div class="howdo-container__item howdo-container-item rounded">
+                <div class="howdo-container__item howdo-container-item bordered">
                     <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
                     <p class="howdo-container-item__text">
                         Подготовка тестовых сценариев: в этом этапе разрабатываются тестовые сценарии и тест-кейсы,
@@ -128,7 +137,7 @@
                         описывают шаги, необходимые для проверки функциональности ПО.
                     </p>
                 </div>
-                <div class="howdo-container__item howdo-container-item rounded">
+                <div class="howdo-container__item howdo-container-item bordered">
                     <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
                     <p class="howdo-container-item__text">
                         Выполнение тестов: тестировщики проводят тесты
@@ -143,7 +152,7 @@
                         <img src="icons/title/code.svg" alt="" class="title-icon">
                     </div>
                 </div>
-                <div class="howdo-container__item howdo-container__item--wide howdo-container-item rounded">
+                <div class="howdo-container__item howdo-container__item--wide howdo-container-item bordered">
                     <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
                     <p class="howdo-container-item__text">
                         Регистрация и анализ результатов: результаты тестирования фиксируются, ошибки и недочеты
@@ -152,7 +161,7 @@
                         качества ПО.
                     </p>
                 </div>
-                <div class="howdo-container__item howdo-container-item rounded">
+                <div class="howdo-container__item howdo-container-item bordered">
                     <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
                     <p class="howdo-container-item__text">
                         Устранение ошибок и повторное тестирование: после выявления ошибок разработчики вносят
@@ -160,7 +169,7 @@
                         ПО, после чего проводится повторное тестирование для проверки исправлений.
                     </p>
                 </div>
-                <div class="howdo-container__item howdo-container-item rounded">
+                <div class="howdo-container__item howdo-container-item bordered">
                     <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
                     <p class="howdo-container-item__text">
                         Завершение тестирования: после успешного прохождения всех тестов и устранения всех ошибок
@@ -195,63 +204,59 @@
             </div>
         </div>
     </section>
-    <section class="hidden section outstaffwork">
-        <div class="container">
-            <div class="top">
+    <section class=" section outstaffwork">
+        <div class="top">
                 <h2 class="title">Как работает аутстафф</h2>
                 <img src="icons/title/lines.svg" alt="" class="title-icon">
             </div>
-            <div class="subtitle">При аутстафе мы предоставляем вам it-специалистов при этом они находятся в нашем
-                штабе. Вы сможете прособеседовать наших специалистов.
-            </div>
+            <div class="subtitle">При аутстафе мы предоставляем вам it-специалистов при этом они находятся в нашем штабе. Вы сможете прособеседовать наших специалистов.</div>
 
             <div class="outstaffwork__wrapper">
+                <div class="outstaffwork-profit">Выгоды аутстаффа:</div>
                 <div class="outstaffwork__items">
                     <div class="outstaffwork-text">Выгоды</div>
                     <div class="outstaffwork-text">аутстаффа</div>
 
-                    <div class="outstaffwork-item">
+                    <div class="outstaffwork-item rounded item1">
                         <div class="outstaffwork-item__descr">Отсутствие необходимости поиска специалистов.</div>
                         <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
                     </div>
 
-                    <div class="outstaffwork-item">
+                    <div class="outstaffwork-item rounded item2">
                         <div class="outstaffwork-item__descr">Отсутствие проблем возникающих при увольнении
                             сотрудника.
                         </div>
                         <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
                     </div>
 
-                    <div class="outstaffwork-item">
+                    <div class="outstaffwork-item rounded item3">
                         <div class="outstaffwork-item__descr">Возможность привлечения персонала для временных
                             проектов.
                         </div>
                         <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
                     </div>
 
-                    <div class="outstaffwork-item">
+                    <div class="outstaffwork-item rounded item4">
                         <div class="outstaffwork-item__descr">Сокращение затрат на отчисления от совокупного ФОТ.</div>
                         <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
                     </div>
 
-                    <div class="outstaffwork-item">
+                    <div class="outstaffwork-item rounded item5">
                         <div class="outstaffwork-item__descr">Предотвращение расходов на выплату отпускных, больничных
                         </div>
                         <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
                     </div>
 
-                    <div class="outstaffwork-item">
+                    <div class="outstaffwork-item rounded item6">
                         <div class="outstaffwork-item__descr">Точечное закрытие позиций.</div>
                         <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="hidden section clients">
-        <div class="container">
-            <div class="top">
+    <section class=" section clients">
+        <div class="top">
                 <h2 class="title">Наши клиенты</h2>
                 <img class="title-icon" src="icons/title/lines.svg" alt="">
             </div>
@@ -316,54 +321,41 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="hidden section howwork">
-        <div class="container">
-            <div class="top">
+    <section class=" section howwork">
+        <div class="top">
                 <h2 class="title">Как мы работаем</h2>
                 <img src="icons/title/code.svg" alt="" class="title-icon">
             </div>
 
             <div class="howwork__wrapper">
                 <div class="howwork__items">
-                    <div class="howwork-item big">
+                    <div class="howwork-item item1">
                         <img src="" alt="" class="howwork-item__bg">
-                        <div class="howwork-item__descr">Мы запрашиваем информацию о проекте и условия, которые наши
-                            сотрудники подходят для его реализации. Провожу внутренний отбор и техническое
-                            собеседование.
-                        </div>
+                        <div class="howwork-item__descr">Мы запрашиваем информацию о проекте и условия, которые наши сотрудники подходят для его реализации. Провожу внутренний отбор и техническое собеседование.</div>
                     </div>
-                    <div class="howwork-item mini1">
+                    <div class="howwork-item item2">
                         <img src="" alt="" class="howwork-item__bg">
-                        <div class="howwork-item__descr">Проводим интервью и выбираем специалистов, которые
-                            соответствуют опыту.
-                        </div>
+                        <div class="howwork-item__descr">Проводим интервью и выбираем специалистов, которые соответствуют опыту.</div>
                     </div>
-                    <div class="howwork-item mini2">
+                    <div class="howwork-item item3">
                         <img src="" alt="" class="howwork-item__bg">
-                        <div class="howwork-item__descr">Вывод специалиста на проект с адаптационным периодом до 5
-                            дней.
-                        </div>
+                        <div class="howwork-item__descr">Вывод специалиста на проект с адаптационным периодом до 5 дней.</div>
                     </div>
-                    <div class="howwork-item mini3">
+                    <div class="howwork-item item4">
                         <img src="" alt="" class="howwork-item__bg">
-                        <div class="howwork-item__descr">При желании вы можете провести интервью и проверить нашего
-                            специалиста.
-                        </div>
+                        <div class="howwork-item__descr">При желании вы можете провести интервью и проверить нашего специалиста.</div>
                     </div>
-                    <div class="howwork-item mini4">
+                    <div class="howwork-item item5">
                         <img src="" alt="" class="howwork-item__bg">
                         <div class="howwork-item__descr">Осуществляем поддержку на всех этапах работы специалиста.</div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="hidden section reviews">
-        <div class="container">
+    <section class="section reviews ">
             <div class="top">
                 <h2 class="title">Отзывы</h2>
                 <img class="title-icon" src="icons/title/lines.svg" alt="">
@@ -372,7 +364,7 @@
             <div class="reviews__wrapper">
                 <div class="reviews-swiper swiperReviews">
                     <div class="reviews-swiper__wrapper swiper-wrapper">
-                        <div class="reviews-item star5 swiper-slide">
+                        <div class="reviews-item rounded star5 swiper-slide">
                             <div class="reviews-item__quotes">
                                 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
@@ -394,7 +386,7 @@
                             </div>
                         </div>
 
-                        <div class="reviews-item star5 swiper-slide">
+                        <div class="reviews-item rounded star5 swiper-slide">
                             <div class="reviews-item__quotes">
                                 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
@@ -416,7 +408,7 @@
                             </div>
                         </div>
 
-                        <div class="reviews-item star5 swiper-slide">
+                        <div class="reviews-item rounded star5 swiper-slide">
                             <div class="reviews-item__quotes">
                                 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
@@ -438,7 +430,7 @@
                             </div>
                         </div>
 
-                        <div class="reviews-item star5 swiper-slide">
+                        <div class="reviews-item rounded star5 swiper-slide">
                             <div class="reviews-item__quotes">
                                 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
@@ -460,7 +452,7 @@
                             </div>
                         </div>
 
-                        <div class="reviews-item star5 swiper-slide">
+                        <div class="reviews-item rounded star5 swiper-slide">
                             <div class="reviews-item__quotes">
                                 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
@@ -482,7 +474,7 @@
                             </div>
                         </div>
 
-                        <div class="reviews-item star5 swiper-slide">
+                        <div class="reviews-item rounded star5 swiper-slide">
                             <div class="reviews-item__quotes">
                                 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
@@ -504,7 +496,7 @@
                             </div>
                         </div>
 
-                        <div class="reviews-item star5 swiper-slide">
+                        <div class="reviews-item rounded star5 swiper-slide">
                             <div class="reviews-item__quotes">
                                 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
@@ -526,7 +518,7 @@
                             </div>
                         </div>
 
-                        <div class="reviews-item star5 swiper-slide">
+                        <div class="reviews-item rounded star5 swiper-slide">
                             <div class="reviews-item__quotes">
                                 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 7.5C15 6.11929 13.8722 4.97815 12.5107 5.20799C5.43445 6.40261 0 12.5975 0 20V30C0 32.7614 2.23858 35 5 35H10C12.7614 35 15 32.7614 15 30V25C15 22.2386 12.7614 20 10 20C7.23858 20 4.89245 17.6277 6.21201 15.202C7.52265 12.7926 9.79497 10.9921 12.5247 10.3048C13.8636 9.96768 15 8.88071 15 7.5ZM34 7.5C34 6.11929 32.8722 4.97815 31.5107 5.20799C24.4344 6.40261 19 12.5975 19 20V30C19 32.7614 21.2386 35 24 35H29C31.7614 35 34 32.7614 34 30V25C34 22.2386 31.7614 20 29 20C26.2386 20 23.8924 17.6277 25.212 15.202C26.5227 12.7926 28.795 10.9921 31.5247 10.3048C32.8636 9.96768 34 8.88071 34 7.5Z"/>
@@ -551,60 +543,74 @@
 
                     <div class="reviews-swiper__nav">
                         <div class="reviews-swiper__nav_button-prev swiper-button-prev">
-                            <svg width="16.004028" height="13.321289" viewBox="0 0 16.004 13.3213" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path id="Arrow Prev"
-                                      d="M3.41 5.66L7.36 1.71C7.76 1.31 7.76 0.69 7.36 0.29C6.97 -0.1 6.34 -0.1 5.95 0.29L0.29 5.95C-0.1 6.34 -0.1 6.97 0.29 7.36L5.95 13.02C6.34 13.42 6.97 13.42 7.36 13.02C7.76 12.62 7.76 12 7.36 11.61L3.41 7.66L15 7.66C15.56 7.66 16 7.22 16 6.66C16 6.1 15.56 5.66 15 5.66L3.41 5.66Z"
-                                      fill="#191B20" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <svg width="16.004028" height="13.321289" viewBox="0 0 16.004 13.3213" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Arrow Prev" d="M3.41 5.66L7.36 1.71C7.76 1.31 7.76 0.69 7.36 0.29C6.97 -0.1 6.34 -0.1 5.95 0.29L0.29 5.95C-0.1 6.34 -0.1 6.97 0.29 7.36L5.95 13.02C6.34 13.42 6.97 13.42 7.36 13.02C7.76 12.62 7.76 12 7.36 11.61L3.41 7.66L15 7.66C15.56 7.66 16 7.22 16 6.66C16 6.1 15.56 5.66 15 5.66L3.41 5.66Z" fill="#191B20" fill-opacity="1.000000" fill-rule="evenodd"/>
                             </svg>
                         </div>
                         <div class="reviews-swiper__nav_button-next swiper-button-next">
-                            <svg width="16.004028" height="13.321289" viewBox="0 0 16.004 13.3213" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path id="Arrow Next"
-                                      d="M12.58 5.66L8.63 1.71C8.24 1.31 8.24 0.69 8.63 0.29C9.03 -0.1 9.65 -0.1 10.05 0.29L15.7 5.95C16.1 6.34 16.1 6.97 15.7 7.36L10.05 13.02C9.65 13.42 9.03 13.42 8.63 13.02C8.24 12.62 8.24 12 8.63 11.61L12.58 7.66L1 7.66C0.43 7.66 0 7.22 0 6.66C0 6.1 0.43 5.66 1 5.66L12.58 5.66Z"
-                                      fill="#191B20" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <svg width="16.004028" height="13.321289" viewBox="0 0 16.004 13.3213" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Arrow Next" d="M12.58 5.66L8.63 1.71C8.24 1.31 8.24 0.69 8.63 0.29C9.03 -0.1 9.65 -0.1 10.05 0.29L15.7 5.95C16.1 6.34 16.1 6.97 15.7 7.36L10.05 13.02C9.65 13.42 9.03 13.42 8.63 13.02C8.24 12.62 8.24 12 8.63 11.61L12.58 7.66L1 7.66C0.43 7.66 0 7.22 0 6.66C0 6.1 0.43 5.66 1 5.66L12.58 5.66Z" fill="#191B20" fill-opacity="1.000000" fill-rule="evenodd"/>
                             </svg>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="hidden section feedback" id="feedback">
-        <div class="container">
+    <section class="section feedback " id="feedback">
             <div class="top">
                 <h2 class="title">Связаться с нами</h2>
                 <img src="icons/title/lines.svg" alt="" class="title-icon">
             </div>
 
             <div class="feedback__wrapper">
-                <div class="feedback__forms">
-
+                <div class="feedback__content">
+                    <div class="feedback-forms">
+                        <div class="feedback-form name">
+                            <label for="name"></label>
+                            <input id="name" type="text" name="name" placeholder="Имя">
+                        </div>
+                        <div class="feedback-form telegram">
+                            <label for="telegram"></label>
+                            <input id="telegram" type="text" name="telegram" placeholder="Телеграм">
+                        </div>
+                        <div class="feedback-form email">
+                            <label for="email"></label>
+                            <input id="email" type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="feedback-form number">
+                            <label for="number"></label>
+                            <input id="number" type="number" name="number" placeholder="Телефон">
+                        </div>
+                        <div class="feedback-form company">
+                            <label for="company"></label>
+                            <input id="company" type="text" name="company" placeholder="Компания">
+                        </div>
+                        <div class="feedback-form description">
+                            <label for="description"></label>
+                            <textarea id="description" name="description" placeholder="Описание задачи"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="feedback-button">Прикрепить файл</button>
                 </div>
                 <div class="feedback-send">
-                    <a href="" class="feedback-button">
-                        <div class="feedback-button__text">Отправить</div>
-                        <div class="feedback-button__arrow">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM1 9H19V7H1V9Z"
-                                      fill="#191B20"/>
+                    <a href="" class="feedback-send-button">
+                        <div class="feedback-send-button__text">Отправить</div>
+                        <div class="feedback-send-button__arrow">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM1 9H19V7H1V9Z" fill="#191B20"/>
                             </svg>
                         </div>
                     </a>
-                    <div class="feedback-agree">
-                        Нажимая на кнопку вы даете <a href="">согласие на обработку персональных данных</a> и
-                        соглашаетесь <a href="">с политикой конфиденциальности</a>
-                    </div>
+                    <div class="feedback-send-agree">
+                        Нажимая на кнопку вы даете <a href="">согласие на обработку персональных данных</a> и соглашаетесь <a href="">с политикой конфиденциальности</a>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
-<footer class="footer">
+<footer class="footer ">
     <div class="footer__wrapper">
         <div class="top">
             <div class="footer-logo">
@@ -617,8 +623,10 @@
                 <a class="footer-menu__link" href="#">Разработка</a>
             </div>
 
-            <a href="#feedback" class="footer-button button-feedback">Связаться с нами</a>
+            <a href="" class="footer-button button-feedback">Связаться с нами</a>
         </div>
+
+
     </div>
 </footer>
 

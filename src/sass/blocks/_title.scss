@@ -3,17 +3,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 120px;
   padding-bottom: 30px;
-  &.pt100 {
-    padding-top: 100px;
-  }
 }
 
 .title {
   font-size: 64px;
   font-weight: 700;
   &-icon {
+    padding-left: 10px;
     height: 34px;
   }
 }

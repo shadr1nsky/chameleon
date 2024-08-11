@@ -1,20 +1,81 @@
-.feedback__forms {
+.feedback {
+  padding-bottom: 171px;
+  &__wrapper {
+    display: flex;
+    gap: 90px;
+  }
+  &__content {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.feedback-forms {
   display: grid;
   grid-template-areas:
           "name telegram"
           "mail number"
-          "company"
-          "description";
+          "company company"
+          "description description";
   grid-template-rows: 47px 47px 47px 150px;
+  gap: 20px;
+}
+
+.feedback-form {
+  display: flex;
+  background-color: #F4F4F4;
+  border-radius: 16px;
+  padding: 10px 20px;
+  ::placeholder {
+    font-size: 18px;
+    color: #000000;
+  }
+  input, textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+  }
+  &.name {
+    grid-area: name;
+  }
+  &.telegram {
+    grid-area: telegram;
+  }
+  &.mail {
+    grid-area: mail;
+  }
+  &.number {
+    grid-area: number;
+  }
+  &.company {
+    grid-area: company;
+  }
+  &.description {
+    grid-area: description;
+  }
+}
+
+.feedback-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 47px;
+  background-color: #F4F4F4;
+  border-radius: 16px;
+  font-size: 18px;
 }
 
 .feedback-send {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 27px;
 }
 
-.feedback-button {
+.feedback-send-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +100,7 @@
   }
 }
 
-.feedback-agree {
+.feedback-send-agree {
   font-size: 12px;
   width: 410px;
   text-align: center;

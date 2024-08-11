@@ -1,0 +1,97 @@
+@media (max-width: 1300px) {
+  .outstaffwork-text {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .outstaffwork {
+    &__items {
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+  .nav {
+    &__wrapper {
+      padding-inline: 10px;
+      gap: 20px;
+    }
+  }
+
+  .nav-menu {
+    gap: 25px;
+  }
+
+  .outstaffwork-text {
+    font-size: 80px;
+  }
+
+  .howwork {
+    &__items {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-areas: unset;
+    }
+  }
+  .howwork-item {
+    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
+      grid-area: unset;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .promo-title {
+    font-size: 44px;
+  }
+
+  .outstaffwork {
+    &__items {
+      padding-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-areas: unset;
+    }
+  }
+  .outstaffwork-profit {
+    display: block;
+  }
+  .outstaffwork-text {
+    display: none;
+  }
+  .outstaffwork-item {
+    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
+      grid-area: unset;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 36px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .button-feedback {
+    font-size: 14px;
+    padding: 12.5px;
+  }
+
+  .promo-title {
+    font-size: 33px;
+  }
+}

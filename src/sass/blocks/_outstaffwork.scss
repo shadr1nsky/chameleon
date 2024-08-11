@@ -2,7 +2,7 @@
   &__items {
     padding-top: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 315px);
+    grid-template-columns: repeat(4, minmax(180px, 315px));
     grid-auto-rows: 120px;
     margin-inline: auto;
     grid-template-areas:
@@ -13,7 +13,17 @@
   }
 }
 
+.outstaffwork-profit {
+  display: none;
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 40px;
+  text-align: center;
+}
+
 .outstaffwork-text {
+  display: flex;
+  align-items: center;
   font-family: "Onest", sans-serif;
   font-size: 140px;
   font-weight: 600;
@@ -32,16 +42,11 @@
 .outstaffwork-item {
   display: flex;
   align-items: center;
-  width: 315px;
   height: 120px;
   border-radius: 30px;
   position: relative;
   overflow: hidden;
   padding: 40px 30px;
-  border: 2px solid transparent;
-  background:
-    linear-gradient(#FFFFFF, #FFFFFF) padding-box,
-    linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%) border-box;
   &:hover {
     background:
       linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%) padding-box,
@@ -50,22 +55,22 @@
       display: block;
     }
   }
-  &:nth-child(1) {
+  &.item1 {
     grid-area: item1;
   }
-  &:nth-child(2) {
+  &.item2 {
     grid-area: item2;
   }
-  &:nth-child(3) {
+  &.item3 {
     grid-area: item3;
   }
-  &:nth-child(4) {
+  &.item4 {
     grid-area: item4;
   }
-  &:nth-child(5) {
+  &.item5 {
     grid-area: item5;
   }
-  &:nth-child(6) {
+  &.item6 {
     grid-area: item6;
   }
   &__descr {
