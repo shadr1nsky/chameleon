@@ -1,0 +1,102 @@
+.out-staff-table {
+  border-collapse: collapse;
+  max-width: 1024px;
+  width: 100%;
+
+  &__title {
+    display: flex;
+    width: min-content;
+  }
+
+  &__time {
+    th {
+      text-align: center !important;
+      padding-block: 8px !important;
+      font-weight: 600;
+      line-height: 56px;
+      background: linear-gradient(90deg, #9FE11F 0%, #FFDD48 58%, #FF9217 100%) !important;
+      background-clip: text !important;
+      color: transparent !important;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid #8D8D8D;
+
+    &.empty {
+      border-bottom: none;
+      @media(max-width: 480px) {
+        td {
+          padding-block: 6px;
+          padding-inline: 8px;
+        }
+      }
+    }
+
+    &.primary {
+      background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) border-box;
+      background-clip: padding-box;
+      border-bottom: none;
+
+      td {
+        &:last-of-type {
+          border-bottom-right-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+
+        &:first-of-type {
+          border-bottom-left-radius: 20px;
+          border-top-left-radius: 20px;
+        }
+      }
+    }
+  }
+
+  th, td {
+
+    &:nth-child(1) {
+      text-align: left;
+    }
+
+    &:not(:nth-child(1)) {
+      text-align: right;
+    }
+
+    &:not(:empty) {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 400;
+      padding-block: 36px;
+      @media(max-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+        padding-block: 24px;
+        padding-inline: 12px;
+      }
+      @media(max-width: 480px) {
+        font-size: 12px;
+        line-height: 16px;
+        padding-block: 16px;
+        padding-inline: 8px;
+      }
+    }
+
+    padding-block: 20px;
+    padding-inline: 22px;
+    @media(max-width: 480px) {
+      padding-block: 16px;
+      padding-inline: 8px;
+    }
+
+    p {
+      color: #8D8D8D;
+      margin-bottom: 10px;
+    }
+  }
+
+  th {
+    color: #8D8D8D
+  }
+
+
+}
