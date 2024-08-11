@@ -128,6 +128,19 @@
     }
   }
 
+  .portfolio {
+    &__wrapper {
+      padding: 25px;
+    }
+  }
+  .portfolio-swiper {
+    padding: 25px;
+  }
+  .portfolio-watermark {
+    top: 55px;
+    font-size: 48px;
+  }
+
   .feedback {
     padding-bottom: 80px;
   }
@@ -153,6 +166,10 @@
 }
 
 @media (max-width: 640px) {
+  .title-icon {
+    margin-top: 0;
+  }
+
   .footer-mid-company {
     display: none;
   }
@@ -161,6 +178,14 @@
     &__title {
       padding-left: 80px;
     }
+  }
+
+
+  .portfolio-swiper {
+    margin-top: 0;
+  }
+  .portfolio-watermark {
+    display: none;
   }
 
   .feedback {
@@ -194,6 +219,12 @@
 
   .outstaffwork-profit {
     font-size: 24px;
+  }
+
+  .portfolio-swiper-slide {
+    &__image {
+      height: 250px;
+    }
   }
 
   .promo-title {

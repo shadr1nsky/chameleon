@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiperPromo', {
+new Swiper('.swiperPromo', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 1000,
@@ -8,9 +8,9 @@ var swiper = new Swiper('.swiperPromo', {
     },
 });
 
-var swiper = new Swiper('.swiperCarousel', {
+new Swiper('.swiperCarousel', {
     direction: 'horizontal',
-slidesPerView: '6',
+    slidesPerView: '6',
     spaceBetween: 56,
     loop: true,
     freeMode: true,
@@ -19,7 +19,7 @@ slidesPerView: '6',
     // },
 });
 
-var swiper = new Swiper('.swiperClients', {
+new Swiper('.swiperClients', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 20,
@@ -31,7 +31,7 @@ var swiper = new Swiper('.swiperClients', {
     }
 });
 
-var swiper = new Swiper('.swiperReviews', {
+new Swiper('.swiperReviews', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 20,
@@ -50,6 +50,23 @@ var swiper = new Swiper('.swiperReviews', {
         },
         600: {
             slidesPerView: 2,
+        },
+    }
+});
+
+new Swiper('.swiperPortfolio', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        576: {
+            slidesPerView: 'auto',
         },
     }
 });

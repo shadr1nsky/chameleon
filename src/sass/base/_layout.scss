@@ -32,13 +32,13 @@ html {
 .section, .section--wide {
   &.promo+& {
     padding-top: 100px;
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       padding-top: 70px;
     }
   }
   &+& {
     padding-top: 120px;
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       padding-top: 90px;
     }
   }
