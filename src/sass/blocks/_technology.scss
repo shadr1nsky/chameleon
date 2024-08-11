@@ -1,0 +1,93 @@
+.technology {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #511F67;
+}
+
+.system {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+
+  &__sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 100%;
+    animation-duration: 4s;
+    transform: translate(-50%, -50%);
+
+    @for $i from 2 through 5 {
+      &:nth-child(#{$i}) {
+        transform: translate(-50%, -50%) rotate(calc(#{$i} * 10deg));
+        width: calc(60%);
+        height: calc(60%);
+        animation: spin-#{$i} infinite linear both 12s;
+
+        @keyframes spin-#{$i} {
+          to {
+            transform: translate(-50%, -50%) rotate(calc(360 / 4 * #{$i}deg));
+          }
+          from {
+            transform: translate(-50%, -50%) rotate(calc(360deg + (360 / 4 * #{$i}deg)));
+
+          }
+        }
+      }
+    }
+    @for $i from 6 through 10 {
+      &:nth-child(#{$i}) {
+        transform: translate(-50%, -50%) rotate(calc(#{$i} * 10deg));
+        width: calc(80%);
+        height: calc(80%);
+        animation: spin-#{$i} infinite linear both 16s;
+
+        @keyframes spin-#{$i} {
+          from {
+            transform: translate(-50%, -50%) rotate(calc(360 / 5 * #{$i}deg));
+          }
+          to {
+            transform: translate(-50%, -50%) rotate(calc(360deg + (360 / 5 * #{$i}deg)));
+
+          }
+        }
+      }
+    }
+
+    &--sun {
+      width: calc(10%);
+      height: calc(10%);
+      border: none;
+      animation: none;
+    }
+
+  }
+
+  &__planet {
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+}
+
