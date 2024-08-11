@@ -11,11 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Onest:wght@100..900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/development.style.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <header>
-    <nav class="nav">
+    <nav class="section--wide nav">
         <div class="nav__wrapper">
             <div class="nav-logo">
                 <img src="icons/logo.svg" alt="">
@@ -55,62 +56,375 @@
         </div>
     </section>
 
+    <section class="section whatmake" id="whatmake">
+        <div class="top">
+            <h2 class="title">Что мы делаем</h2>
+            <img class="title-icon" src="icons/title/lines.svg" alt="">
+        </div>
 
-    <section class="section technology">
-        <div class="system">
-            <div class="system__orbit system__orbit--sun">
-                <img src="https://www.dropbox.com/s/g02pto204mz1ywi/sun.png?raw=1" alt="Sun"
-                     class="system__icon system__icon--sun">
+        <div class="whatmake__wrapper">
+            <div class="subtitle">Наша компания предлагает профессиональные услуги по тестированию программного
+                обеспечения. Мы поможем вам обеспечить высокое качество вашего продукта перед его выпуском на рынок.
             </div>
-            <div class="system__orbit system__orbit--mercury">
-                <div class="system__planet system__planet--mercury">
-                    <img src="https://www.dropbox.com/s/2o38602cmwhhdi1/mercury.png?raw=1" alt="Mercury">
+
+            <div class="whatmake__items">
+                <div class="whatmake-item">
+                    <img class="whatmake-item__icon" src="icons/whatmake/1.svg" alt="">
+                    <div class="whatmake-item__descr">Наши специалисты имеют большой опыт в области тестирования и
+                        готовы предложить вам полный спектр услуг, начиная от планирования тестов и создания
+                        тестовой документации, и заканчивая выполнением тестов и анализом результатов.
+                    </div>
                 </div>
-            </div>
-            <div class="system__orbit system__orbit--venus">
-                <div class="system__planet system__planet--venus">
-                    <img src="https://www.dropbox.com/s/wvictuysutiirho/venus.png?raw=1" alt="Venus">
+
+                <div class="whatmake-item">
+                    <img class="whatmake-item__icon" src="icons/whatmake/2.svg" alt="">
+                    <div class="whatmake-item__descr">Мы используем современные методики и инструменты, чтобы
+                        обеспечить максимальное покрытие тестирования и выявить все возможные проблемы до того, как
+                        они окажутся в реальной среде использования.
+                    </div>
                 </div>
-            </div>
-            <div class="system__orbit system__orbit--earth">
-                <div class="system__planet system__planet--earth">
-                    <img src="https://www.dropbox.com/s/ropzlyhb1v19l5t/earth.png?raw=1" alt="Earth">
+
+                <div class="whatmake-item">
+                    <img class="whatmake-item__icon" src="icons/whatmake/3.svg" alt="">
+                    <div class="whatmake-item__descr">При работе с нами вы можете быть уверены, что ваше программное
+                        обеспечение будет работать стабильно и без сбоев, что повысит удовлетворенность ваших
+                        пользователей и улучшит репутацию вашего бренда.
+                    </div>
                 </div>
-            </div>
-            <div class="system__orbit system__orbit--mars">
-                <div class="system__planet system__planet--mars">
-                    <img src="https://www.dropbox.com/s/fa9biyj617n1q30/mars.png?raw=1" alt="Mars">
-                </div>
-            </div>
-            <div class="system__orbit system__orbit--jupiter">
-                <div class="system__planet system__planet--jupiter">
-                    <img src="https://www.dropbox.com/s/d28oxi2c74zcoqk/jupiter.png?raw=1" alt="Jupiter">
-                </div>
-            </div>
-            <div class="system__orbit system__orbit--saturn">
-                <div class="system__planet system__planet--saturn">
-                    <img src="https://www.dropbox.com/s/h8pj72v6mmaa0yq/saturn.png?raw=1" alt="Saturn">
-                </div>
-            </div>
-            <div class="system__orbit system__orbit--uranus">
-                <div class="system__planet system__planet--uranus">
-                    <img src="https://www.dropbox.com/s/du6znsmfos2r4ry/uranus.png?raw=1" alt="Uranus">
-                </div>
-            </div>
-            <div class="system__orbit system__orbit--neptune">
-                <div class="system__planet system__planet--neptune">
-                    <img src="https://www.dropbox.com/s/170sr7xl6gxpona/neptune.png?raw=1" alt="Neptune">
-                </div>
-            </div>
-            <div class="system__orbit system__orbit--pluto">
-                <div class="system__planet system__planet--pluto">
-                    <img src="https://www.dropbox.com/s/z7axkafhs887t9b/pluto.png?raw=1" alt="Pluto">
+
+                <div class="whatmake-item">
+                    <img class="whatmake-item__icon" src="icons/whatmake/4.svg" alt="">
+                    <div class="whatmake-item__descr">Свяжитесь с нами сегодня, чтобы узнать больше о наших услугах и
+                        начать совместную работу над тестированием вашего программного обеспечения.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section reviews ">
+    <section class="section--wide carousel">
+        <div class="carousel-swiper swiperCarousel">
+            <div class="carousel-swiper__wrapper swiper-wrapper">
+                <div class="carousel-item swiper-slide">Регресс</div>
+                <div class="carousel-item swiper-slide">Api</div>
+                <div class="carousel-item swiper-slide">Автотесты</div>
+                <div class="carousel-item swiper-slide">Тест-Кейсы</div>
+                <div class="carousel-item swiper-slide">Интеграция</div>
+                <div class="carousel-item swiper-slide">Нагрузочное</div>
+                <div class="carousel-item swiper-slide">Ручное тестирование</div>
+                <div class="carousel-item swiper-slide">Мобильное</div>
+                <div class="carousel-item swiper-slide">Юзабилити</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section howdo">
+        <div class="howdo-container">
+            <div class="howdo-container__wrapper">
+                <div class="howdo-container__item howdo-container-item bordered">
+                    <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
+                    <p class="howdo-container-item__text">
+                        Планирование тестирования:
+                        в этом этапе определяются цели тестирования, составляется план тестирования, определяется
+                        способ
+                        проведения тестов.
+                    </p>
+                </div>
+                <div class="howdo-container__item howdo-container-item bordered">
+                    <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
+                    <p class="howdo-container-item__text">
+                        Подготовка тестовых сценариев: в этом этапе разрабатываются тестовые сценарии и тест-кейсы,
+                        которые
+                        описывают шаги, необходимые для проверки функциональности ПО.
+                    </p>
+                </div>
+                <div class="howdo-container__item howdo-container-item bordered">
+                    <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
+                    <p class="howdo-container-item__text">
+                        Выполнение тестов: тестировщики проводят тесты
+                        в соответствии с разработанными сценариями
+                        и кейсами, проверяют работоспособность
+                        и соответствие ПО требованиям.
+                    </p>
+                </div>
+                <div class="howdo-container__title howdo-container__item--wide  ">
+                    <div class="howdo__title">
+                        <h2 class="title">Как&nbsp;мы<br/>это&nbsp;делаем</h2>
+                        <img src="icons/title/code.svg" alt="" class="title-icon">
+                    </div>
+                </div>
+                <div class="howdo-container__item howdo-container__item--wide howdo-container-item bordered">
+                    <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
+                    <p class="howdo-container-item__text">
+                        Регистрация и анализ результатов: результаты тестирования фиксируются, ошибки и недочеты
+                        документируются. Проводится анализ результатов тестирования для выявления проблем и
+                        улучшения
+                        качества ПО.
+                    </p>
+                </div>
+                <div class="howdo-container__item howdo-container-item bordered">
+                    <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
+                    <p class="howdo-container-item__text">
+                        Устранение ошибок и повторное тестирование: после выявления ошибок разработчики вносят
+                        исправления в
+                        ПО, после чего проводится повторное тестирование для проверки исправлений.
+                    </p>
+                </div>
+                <div class="howdo-container__item howdo-container-item bordered">
+                    <img src="icons/title/code.svg" alt="" width="27" class="howdo-container-item__icon">
+                    <p class="howdo-container-item__text">
+                        Завершение тестирования: после успешного прохождения всех тестов и устранения всех ошибок
+                        тестирование завершается, и ПО готово
+                        к выпуску.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section test-steps">
+        <div class="container">
+            <div class="top">
+                <h2 class="title">Этапы заказного тестирования вашего проекта</h2>
+                <img src="icons/title/lines.svg" alt="" class="title-icon">
+            </div>
+            <div class="subtitle">
+                Проводим ручное и автоматизированное тестирование готового продукта. Составляем полный
+                перечень документации в том числе отчеты.
+            </div>
+
+            <div class="test-steps__wrapper">
+                <div class="test-steps__items">
+                    <div class="test-steps-item bordered">Консультация</div>
+                    <div class="test-steps-item bordered">Подбор специалистов</div>
+                    <div class="test-steps-item bordered">Организация работы</div>
+                    <div class="test-steps-item bordered">Проведение тестирования</div>
+                    <div class="test-steps-item bordered">Отчетность и обратная связь</div>
+                    <div class="test-steps-item bordered">Поддержка</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section outstaffwork">
+        <div class="top">
+            <h2 class="title">Как работает аутстафф</h2>
+            <img src="icons/title/lines.svg" alt="" class="title-icon">
+        </div>
+        <div class="subtitle">При аутстафе мы предоставляем вам it-специалистов при этом они находятся в нашем штабе. Вы
+            сможете прособеседовать наших специалистов.
+        </div>
+
+        <div class="outstaffwork__wrapper">
+            <div class="outstaffwork-profit">Выгоды аутстаффа:</div>
+            <div class="outstaffwork__items">
+                <div class="outstaffwork-text">Выгоды</div>
+                <div class="outstaffwork-text">аутстаффа</div>
+
+                <div class="outstaffwork-item bordered item1">
+                    <div class="outstaffwork-item__descr">Отсутствие необходимости поиска специалистов.</div>
+                    <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
+                </div>
+
+                <div class="outstaffwork-item bordered item2">
+                    <div class="outstaffwork-item__descr">Отсутствие проблем возникающих при увольнении
+                        сотрудника.
+                    </div>
+                    <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
+                </div>
+
+                <div class="outstaffwork-item bordered item3">
+                    <div class="outstaffwork-item__descr">Возможность привлечения персонала для временных
+                        проектов.
+                    </div>
+                    <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
+                </div>
+
+                <div class="outstaffwork-item bordered item4">
+                    <div class="outstaffwork-item__descr">Сокращение затрат на отчисления от совокупного ФОТ.</div>
+                    <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
+                </div>
+
+                <div class="outstaffwork-item bordered item5">
+                    <div class="outstaffwork-item__descr">Предотвращение расходов на выплату отпускных, больничных
+                    </div>
+                    <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
+                </div>
+
+                <div class="outstaffwork-item bordered item6">
+                    <div class="outstaffwork-item__descr">Точечное закрытие позиций.</div>
+                    <img class="outstaffwork-item__icon" src="icons/outstaffwork/icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section out-staff-price">
+        <div class="top">
+            <h2 class="out-staff-table__title title">Аутстаффинг тестировщиков/QA</h2>
+            <img src="icons/title/lines.svg" alt="" class="title-icon">
+        </div>
+        <table class="out-staff-table">
+            <thead>
+            <tr class="out-staff-table__time empty">
+                <th></th>
+                <th colspan="2">До 3 месяцев</th>
+                <th colspan="2">До 6 месяцев (-5%)</th>
+            </tr>
+            <tr class="out-staff-table__head">
+                <th>Уровень</th>
+                <th>Час</th>
+                <th>Месяц</th>
+                <th>Час</th>
+                <th>Месяц</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="out-staff-table__tr">
+                <td>Middle</td>
+                <td>1 600 ₽</td>
+                <td>256 000 ₽</td>
+                <td>1 520 ₽</td>
+                <td>243 000 ₽</td>
+            </tr>
+            <tr class="out-staff-table__tr">
+                <td>Senior</td>
+                <td>1 300 ₽</td>
+                <td>208 000 ₽</td>
+                <td>1 235 ₽</td>
+                <td>197 600 ₽</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr class="out-staff-table__tr empty">
+                <td colspan="5"></td>
+            </tr>
+
+            <tr class="out-staff-table__tr primary">
+                <td>Junior</td>
+                <td>
+                    <p>Час</p>
+                    800р
+                </td>
+                <td>
+                    <p>Месяц</p>
+                    128 000 ₽
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            </tfoot>
+        </table>
+    </section>
+
+    <section class="section clients">
+        <div class="top">
+            <h2 class="title">Наши клиенты</h2>
+            <img class="title-icon" src="icons/title/lines.svg" alt="">
+        </div>
+
+        <div class="clients__wrapper">
+            <div class="clients-swiper swiperClients">
+                <div class="clients-swiper__wrapper swiper-wrapper">
+                    <div class="clients-item swiper-slide">
+                        <div class="clients-item__icon">
+                            <img src="images/clients/Seasia.svg" alt="">
+                        </div>
+
+                        <div class="clients-item__bottom">
+                            <div class="clients-item__name">Seasia Infotech</div>
+                            <div class="clients-item__number">01</div>
+                        </div>
+                    </div>
+
+                    <div class="clients-item swiper-slide">
+                        <div class="clients-item__icon">
+                            <img src="images/clients/CB.svg" alt="">
+                        </div>
+
+                        <div class="clients-item__bottom">
+                            <div class="clients-item__name">CB Website Design</div>
+                            <div class="clients-item__number">02</div>
+                        </div>
+                    </div>
+
+                    <div class="clients-item swiper-slide">
+                        <div class="clients-item__icon">
+                            <img src="images/clients/Cdek.svg" alt="">
+                        </div>
+
+                        <div class="clients-item__bottom">
+                            <div class="clients-item__name">СДЕК</div>
+                            <div class="clients-item__number">03</div>
+                        </div>
+                    </div>
+
+                    <div class="clients-item swiper-slide">
+                        <div class="clients-item__icon">
+                            <img src="images/clients/VTB.svg" alt="">
+                        </div>
+
+                        <div class="clients-item__bottom">
+                            <div class="clients-item__name">ВТБ</div>
+                            <div class="clients-item__number">04</div>
+                        </div>
+                    </div>
+
+                    <div class="clients-item swiper-slide">
+                        <div class="clients-item__icon">
+                            <img src="images/clients/VTB.svg" alt="">
+                        </div>
+
+                        <div class="clients-item__bottom">
+                            <div class="clients-item__name">Blanc</div>
+                            <div class="clients-item__number">05</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section howwork">
+        <div class="top">
+            <h2 class="title">Как мы работаем</h2>
+            <img src="icons/title/code.svg" alt="" class="title-icon">
+        </div>
+
+        <div class="howwork__wrapper">
+            <div class="howwork__items">
+                <div class="howwork-item item1">
+                    <img src="" alt="" class="howwork-item__bg">
+                    <div class="howwork-item__descr">Мы запрашиваем информацию о проекте и условия, которые наши
+                        сотрудники подходят для его реализации. Провожу внутренний отбор и техническое собеседование.
+                    </div>
+                </div>
+                <div class="howwork-item item2">
+                    <img src="" alt="" class="howwork-item__bg">
+                    <div class="howwork-item__descr">Проводим интервью и выбираем специалистов, которые соответствуют
+                        опыту.
+                    </div>
+                </div>
+                <div class="howwork-item item3">
+                    <img src="" alt="" class="howwork-item__bg">
+                    <div class="howwork-item__descr">Вывод специалиста на проект с адаптационным периодом до 5 дней.
+                    </div>
+                </div>
+                <div class="howwork-item item4">
+                    <img src="" alt="" class="howwork-item__bg">
+                    <div class="howwork-item__descr">При желании вы можете провести интервью и проверить нашего
+                        специалиста.
+                    </div>
+                </div>
+                <div class="howwork-item item5">
+                    <img src="" alt="" class="howwork-item__bg">
+                    <div class="howwork-item__descr">Осуществляем поддержку на всех этапах работы специалиста.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section reviews">
         <div class="top">
             <h2 class="title">Отзывы</h2>
             <img class="title-icon" src="icons/title/lines.svg" alt="">
@@ -318,7 +632,7 @@
         </div>
     </section>
 
-    <section class="section feedback " id="feedback">
+        <section class="section feedback" id="feedback">
         <div class="top">
             <h2 class="title">Связаться с нами</h2>
             <img src="icons/title/lines.svg" alt="" class="title-icon">
@@ -373,23 +687,24 @@
     </section>
 </main>
 
-<footer class="footer ">
+<footer class="section--widefooter ">
     <div class="footer__wrapper">
-        <div class="top">
+
             <div class="footer-logo">
                 <img src="icons/logo.svg" alt="">
             </div>
 
-            <div class="footer-menu">
-                <a class="footer-menu__link" href="#">Тестирование</a>
-                <a class="footer-menu__link" href="#">Аутстафф</a>
-                <a class="footer-menu__link" href="#">Разработка</a>
+            <div class="footer-mid">
+                <div class="footer-mid-menu">
+                <a class="footer-mid-menu__link" href="#">Тестирование</a>
+                <a class="footer-mid-menu__link" href="#">Аутстафф</a>
+                <a class="footer-mid-menu__link" href="#">Разработка</a>
             </div>
 
-            <a href="" class="footer-button button-feedback">Связаться с нами</a>
+            <div class="footer-mid-company">Компания CHAMELEON 2024 год.</div>
         </div>
 
-
+            <a href="" class="button-feedback">Связаться с нами</a>
     </div>
 </footer>
 
