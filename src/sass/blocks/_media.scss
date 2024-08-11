@@ -139,9 +139,9 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .title {
-    font-size: 36px;
+    font-size: 24px;
   }
   .subtitle {
     font-size: 14px;
@@ -150,6 +150,10 @@
   .button-feedback {
     font-size: 14px;
     padding: 12.5px;
+  }
+
+  .outstaffwork-profit {
+    font-size: 24px;
   }
 
   .promo-title {
