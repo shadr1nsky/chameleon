@@ -13,7 +13,6 @@
 }
 
 @media (max-width: 900px) {
-
   .nav {
     &__wrapper {
       padding-inline: 10px;
@@ -32,13 +31,19 @@
   .howwork {
     &__items {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-rows: auto;
       grid-template-areas: unset;
     }
   }
   .howwork-item {
+    height: 200px;
     &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
       grid-area: unset;
     }
+  }
+
+  .footer-logo {
+    width: auto;
   }
 }
 
@@ -75,6 +80,27 @@
     &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
       grid-area: unset;
     }
+  }
+
+  .footer {
+    &__wrapper {
+      padding-inline: 10px;
+    }
+  }
+  .footer-logo {
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  .footer-mid-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-mid-company {
+    display: none;
   }
 }
 
