@@ -92,7 +92,7 @@
     transform: translate(-50%, -50%);
 
     &--small {
-      --radius: min(768px, 25vw);
+      --radius: min(768px, 20vw);
       transform: translate(-50%, -50%) rotate(-215deg);
       animation: spin infinite 20s linear;
       @keyframes spin {
@@ -106,7 +106,7 @@
     }
 
     &--big {
-      --radius: min(900px, 30vw);
+      --radius: min(900px, 25vw);
       animation: spin-2 infinite 30s linear;
       @keyframes spin-2 {
         from {
