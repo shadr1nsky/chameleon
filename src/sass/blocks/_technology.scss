@@ -1,11 +1,17 @@
 .technology {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #511F67;
+  border-radius: 50px;
+  background-color: #F9F9F9;
+
+  &__wrapper {
+    overflow: hidden;
+    height: calc(1.16 * min(900px, 35vw));
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: true;
 }
 
 .system {
@@ -13,81 +19,221 @@
   width: 100%;
   aspect-ratio: 1;
 
-  &__sun {
+  &__center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &__circle {
+    &--outline {
+      width: 94px;
+      border: 1px solid #9FE11F;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      position: absolute;
+      top: -3px;
+      left: 40px;
+    }
+
+    &--fill {
+      background-color: #FFDD48;
+      width: 78px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      position: absolute;
+      right: 50px;
+      bottom: -98px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text {
+    font-family: Onest, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.5px;
+    text-align: center;
+    border-radius: 64px;
+    padding-block: 18px;
+    white-space: nowrap;
+    color: white;
+
+    &--client {
+      transform: rotate(-12deg);
+      background-color: #FF9217;
+      min-width: 460px;
+      width: max-content;
+    }
+
+    &--server {
+      transform: translate(0px, -50px) rotate(9deg);
+      background-color: #9FE11F;
+      width: max-content;
+      min-width: 380px;
+
+    }
   }
 
   &__orbit {
+    --tracksize: 3px;
+    width: calc(var(--radius) * 2 + var(--tracksize));
+    aspect-ratio: 1;
+    transition: --angle 0.5s ease-in-out;
     position: absolute;
     top: 50%;
     left: 50%;
-    border: 1px solid rgba(255, 255, 255, .3);
-    border-radius: 100%;
-    animation-duration: 4s;
+    border-radius: 50%;
+    background: linear-gradient(#F9F9F9, #F9F9F9) padding-box,
+    linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) border-box;
+    border: 3px solid transparent;
     transform: translate(-50%, -50%);
 
-    @for $i from 2 through 5 {
-      &:nth-child(#{$i}) {
-        transform: translate(-50%, -50%) rotate(calc(#{$i} * 10deg));
-        width: calc(60%);
-        height: calc(60%);
-        animation: spin-#{$i} infinite linear both 12s;
-
-        @keyframes spin-#{$i} {
-          to {
-            transform: translate(-50%, -50%) rotate(calc(360 / 4 * #{$i}deg));
-          }
-          from {
-            transform: translate(-50%, -50%) rotate(calc(360deg + (360 / 4 * #{$i}deg)));
-
-          }
+    &--small {
+      --radius: min(768px, 25vw);
+      transform: translate(-50%, -50%) rotate(-215deg);
+      animation: spin infinite 20s linear;
+      @keyframes spin {
+        from {
+          transform: translate(-50%, -50%) rotate(-215deg);
         }
-      }
-    }
-    @for $i from 6 through 10 {
-      &:nth-child(#{$i}) {
-        transform: translate(-50%, -50%) rotate(calc(#{$i} * 10deg));
-        width: calc(80%);
-        height: calc(80%);
-        animation: spin-#{$i} infinite linear both 16s;
-
-        @keyframes spin-#{$i} {
-          from {
-            transform: translate(-50%, -50%) rotate(calc(360 / 5 * #{$i}deg));
-          }
-          to {
-            transform: translate(-50%, -50%) rotate(calc(360deg + (360 / 5 * #{$i}deg)));
-
-          }
+        to {
+          transform: translate(-50%, -50%) rotate(145deg);
         }
       }
     }
 
-    &--sun {
-      width: calc(10%);
-      height: calc(10%);
-      border: none;
-      animation: none;
+    &--big {
+      --radius: min(900px, 30vw);
+      animation: spin-2 infinite 30s linear;
+      @keyframes spin-2 {
+        from {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(-360deg);
+        }
+      }
     }
 
-  }
 
-  &__planet {
-    position: absolute;
-    top: 50%;
-    left: -12px;
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    transform: translateY(-50%);
   }
 
   &__icon {
-    width: 100%;
-    height: 100%;
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    width: 84px;
+    position: absolute;
+    left: calc(50% - 42px);
+    top: calc(50% - 42px);
+
+    background: #333;
+
+    transform: translate(calc(cos(var(--angle)) * var(--radius)), calc(sin(var(--angle) * -1) * var(--radius))) rotate(calc(90deg - 1 * var(--angle)));
+
+    &--dot {
+      background-color: #FF971B;
+      width: 20px;
+      left: calc(50% - 10px);
+      top: calc(50% - 10px);
+
+      &:nth-child(1) {
+        --angle: 180deg;
+      }
+
+      &:nth-of-type(2) {
+        --angle: 110deg;
+      }
+
+      &:nth-of-type(3) {
+        --angle: 70deg;
+      }
+
+      &:nth-of-type(4) {
+        --angle: 15deg;
+      }
+
+      &:nth-of-type(5) {
+        --angle: -60deg;
+      }
+
+      &:nth-of-type(6) {
+        --angle: -150deg;
+
+      }
+    }
+
+
+    &--java {
+      background: #FFE264;
+      --angle: 90deg;
+      padding: 2px;
+    }
+
+    &--js {
+      background: #F0DB4F;
+      --angle: -100deg;
+      padding: 10px;
+
+    }
+
+    &--vue {
+      background: #F0DB4F;
+      --angle: -150deg;
+      padding: 10px;
+
+    }
+
+    &--php {
+      background: #FF9217;
+      --angle: 45deg;
+      padding: 10px;
+
+    }
+
+    &--python {
+      background: #FF9217;
+      --angle: 160deg;
+      padding: 10px;
+
+    }
+
+    &--ts {
+      background: #007ACC;
+      --angle: 0deg;
+      padding: 10px;
+
+    }
+
+    &--react {
+      --angle: -30deg;
+      padding: 10px;
+
+    }
+
+    &--nodejs {
+      background: #E3F398;
+      --angle: 135deg;
+      padding: 10px;
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
