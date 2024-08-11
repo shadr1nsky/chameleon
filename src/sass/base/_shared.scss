@@ -1,7 +1,10 @@
 .rounded {
   border-radius: 25px;
   border: 2px solid transparent;
-  background:
-          linear-gradient(#FFFFFF, #FFFFFF) padding-box,
-          linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%) border-box;
+  background: linear-gradient(#FFFFFF, #FFFFFF) padding-box,
+  linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) border-box;
+}
+
+.hidden {
+  display: none !important;
 }

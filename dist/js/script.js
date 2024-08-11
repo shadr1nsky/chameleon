@@ -1,8 +1,9 @@
 var swiper = new Swiper('.swiperCarousel', {
     direction: 'horizontal',
-    slidesPerView: 'auto',
+slidesPerView: '6',
     spaceBetween: 56,
     loop: true,
+    freeMode: true,
     // autoplay: {
     //     delay: 1000,
     // },

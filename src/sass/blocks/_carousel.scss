@@ -24,7 +24,7 @@ $animationSpeed: 40s;
     //width: max-content;
     //height: 110px;
     //transition-timing-function: linear !important;
-
+    transition-timing-function: linear;
     animation: scroll $animationSpeed linear infinite;
     gap: 20px;
     width: calc(250px * 7);
@@ -38,4 +38,5 @@ $animationSpeed: 40s;
   font-size: 32px;
   opacity: .8;
   text-transform: uppercase;
+  white-space: nowrap;
 }

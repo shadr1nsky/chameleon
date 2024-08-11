@@ -1,0 +1,77 @@
+.howdo {
+  padding-top: 100px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.howdo-container {
+  padding: 40px;
+  border-radius: 50px;
+  background-color: #F9F9F9;
+  @media(max-width: 768px) {
+    padding: 10px;
+  }
+
+  &__wrapper {
+    background: none;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    @media(min-width: 1440px) {
+      column-gap: 120px;
+      row-gap: 100px;
+      background-image: url('/images/howdo/bg.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #F9F9F9;
+    }
+
+  }
+
+  &__item, &__title {
+    flex: 1 0 330px;
+    @media(min-width: 1440px) {
+      flex: 0 0 300px;
+      &--wide {
+        flex: 1 0 40%
+      }
+    }
+  }
+
+  &__title {
+    align-self: center;
+    order: -1;
+    @media(min-width: 1440px) {
+      flex: 0 0 auto;
+    }
+    @media(min-width: 1200px) {
+      order: 0;
+    }
+  }
+
+  &__item {
+    @media(min-width: 1440px) {
+      min-height: 237px;
+      &--wide {
+        min-height: 137px;
+      }
+      &:nth-child(5) {
+        margin-bottom: 50px;
+      }
+    }
+
+  }
+}
+
+.howdo-container-item {
+  padding: 24px 12px;
+
+  &__icon {
+    margin-bottom: 39px;
+  }
+}

@@ -2,10 +2,30 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
-  max-width: 1320px;
-  margin-inline: 60px;
-  @media (min-width: 1441px) {
-    margin-inline: auto;
+.section {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  @media (max-width: 1200px) {
+    padding-inline: 40px;
+  }
+  @media (max-width: 1024px) {
+    padding-inline: 30px;
+  }
+  @media (max-width: 768px) {
+    padding-inline: 20px;
+  }
+  @media (max-width: 640px) {
+    padding-inline: 16px;
+  }
+  @media (max-width: 480px) {
+    padding-inline: 8px;
+  }
+  @media (max-width: 375px) {
+    padding-inline: 6px;
+  }
+
+  &--wide {
+    padding-inline: 0;
   }
 }
