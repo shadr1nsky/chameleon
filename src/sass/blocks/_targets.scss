@@ -1,5 +1,5 @@
 .targets {
-  &__wrapper {
+  &__items {
     display: grid;
     grid-template-areas:
             "item1 item1 item4 item5"
@@ -7,9 +7,44 @@
     grid-template-rows: repeat(2, 270px);
     gap: 20px;
   }
-}.targets-item {
+}
+
+.targets-item {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 16px;
- }
+  padding: 25px;
+  background-color: #F4F4F4;
+  border-radius: 30px;
+  &.item1 {
+    background-color: #FFAB4D;
+    grid-area: item1;
+  }
+  &.item2 {
+    background-color: #FFDD48;
+    grid-area: item2;
+  }
+  &.item3 {
+    background-color: #BDEE60;
+    grid-area: item3;
+  }
+  &.item4 {
+    background-color: #FFDD48;
+    grid-area: item4;
+  }
+  &.item5 {
+    background-color: #BDEE60;
+    grid-area: item5;
+  }
+  &.item6 {
+    background-color: #FFAB4D;
+    grid-area: item6;
+  }
+  &__title {
+    font-size: 24px;
+  }
+  &__descr {
+    font-size: 16px;
+  }
+}
