@@ -4,7 +4,7 @@
     grid-template-areas:
             "item1 item1 item4 item5"
             "item2 item3 item4 item6";
-    grid-template-rows: repeat(2, 270px);
+    grid-template-rows: repeat(2, minmax(270px, 1fr));
     gap: 20px;
   }
 }

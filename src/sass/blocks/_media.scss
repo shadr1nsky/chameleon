@@ -2,6 +2,19 @@
   .outstaffwork-text {
     font-size: 100px;
   }
+
+  .targets {
+    &__items {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-rows: auto;
+      grid-template-areas: unset;
+    }
+  }
+  .targets-item {
+    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
+      grid-area: unset;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -122,7 +135,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .footer-mid-company {
     display: none;
   }
@@ -136,6 +149,10 @@
   }
   .feedback-send {
     gap: 20px;
+  }
+
+  .targets-item {
+    min-height: 150px;
   }
 }
 
