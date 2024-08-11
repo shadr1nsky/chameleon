@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: end;
     .swiper-button-disabled {
-      background-color: #EDEDED;
+      background: #EDEDED;
     }
     &_button {
       &-prev, &-next {
@@ -18,7 +18,7 @@
         width: 50px;
         height: 50px;
         margin: 0;
-        background-color: #9FE11F;
+        background: linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%);
         border-radius: 100%;
         padding: 18px;
         &:after {
