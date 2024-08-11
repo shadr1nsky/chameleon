@@ -42,6 +42,25 @@
     }
   }
 
+  .feedback {
+    &__wrapper {
+      gap: 45px;
+    }
+    &__content {
+      gap: 10px;
+    }
+  }
+  .feedback-forms {
+    gap: 10px;
+  }
+  .feedback-send {
+    gap: 10px;
+  }
+  .feedback-send-button {
+    width: 300px;
+    height: 300px;
+  }
+
   .footer-logo {
     width: auto;
   }
@@ -82,6 +101,11 @@
     }
   }
 
+  .feedback-send-button {
+    width: 200px;
+    height: 200px;
+  }
+
   .footer {
     &__wrapper {
       padding-inline: 10px;
@@ -101,6 +125,17 @@
 @media (max-width: 600px) {
   .footer-mid-company {
     display: none;
+  }
+
+  .feedback {
+    padding-bottom: 40px;
+    &__wrapper {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  .feedback-send {
+    gap: 20px;
   }
 }
 
