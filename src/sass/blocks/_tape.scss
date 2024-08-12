@@ -1,0 +1,32 @@
+
+.tape {
+  background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%);
+  overflow: hidden;
+  width: 100%;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    animation: animate-tape 20s linear infinite;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-inline: 28px;
+    padding-block: 36px;
+    color: #191B20;
+  }
+}
+
+@keyframes animate-tape {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}

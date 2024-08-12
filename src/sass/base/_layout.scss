@@ -29,24 +29,9 @@ html {
     padding-inline: 0;
   }
 }
-.section, .section--wide {
-  &.promo+&.whatmake {
-    padding-top: 100px;
-    @media (max-width: 1024px) {
-      padding-top: 70px;
-    }
-  }
-  &.promo+&.services {
-    padding-top: 80px;
-    @media (max-width: 1024px) {
-      padding-top: 50px;
-    }
-  }
-  &+& {
-    padding-top: 120px;
-    @media (max-width: 1024px) {
-      padding-top: 90px;
-    }
-  }
 
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
