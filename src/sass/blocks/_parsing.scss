@@ -1,16 +1,15 @@
-.parsing {
-
-}
-
 .parsing-swiper {
   background-color: #F9F9F9;
   border-radius: 50px;
+  height: 415px;
   padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 70px;
   overflow: hidden;
   position: relative;
+  &__wrapper {
+    padding-top: 70px;
+  }
 }
 
 .parsing-swiper-pagination {
