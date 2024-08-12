@@ -55,7 +55,14 @@ p, div, span {
 
 .title {
   &-icon {
-    @include fluid-type(32px, 77px);
+    &--code {
+      @include fluid-type(32px, 77px);
+    }
+
+    &--lines {
+      @include fluid-type(24px, 34px);
+    }
+
     width: 1em;
   }
 }
