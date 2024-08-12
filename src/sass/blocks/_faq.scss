@@ -20,6 +20,7 @@
     font-size: 18px;
     color: #191B20;
     padding-bottom: 20px;
+    font-family: "Onest", sans-serif;
   }
   &__arrow {
     display: flex;
@@ -38,6 +39,7 @@
   &__answer {
     font-size: 18px;
     padding-bottom: 30px;
+    font-family: "Onest", sans-serif;
   }
   &+& {
     .faq-item__title {

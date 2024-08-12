@@ -35,6 +35,7 @@
   ::placeholder {
     font-size: 18px;
     color: #000000;
+    font-family: "Onest", sans-serif;
   }
   input, textarea {
     width: 100%;
@@ -71,6 +72,7 @@
   border-radius: 16px;
   font-size: 18px;
   border: 1px solid transparent;
+  font-family: "Onest", sans-serif;
   &:hover {
     border-color: #FF971B;
   }
@@ -95,6 +97,7 @@
   &__text {
     font-size: 24px;
     font-weight: 500;
+    font-family: "Onest", sans-serif;
   }
   &__arrow {
     display: flex;
@@ -112,5 +115,9 @@
   font-size: 12px;
   max-width: 410px;
   text-align: center;
+  font-family: "Onest", sans-serif;
   color: #8D8D8D;
+  span {
+    color: #191B20;
+  }
 }
