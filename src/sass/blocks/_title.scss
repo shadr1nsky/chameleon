@@ -9,6 +9,27 @@
   &.pb50 {
     padding-bottom: 50px;
   }
+  &.pinl60 {
+    padding-inline: 60px;
+    @media (max-width: 1200px) {
+      padding-inline: 40px;
+    }
+    @media (max-width: 1024px) {
+      padding-inline: 30px;
+    }
+    @media (max-width: 768px) {
+      padding-inline: 20px;
+    }
+    @media (max-width: 640px) {
+      padding-inline: 16px;
+    }
+    @media (max-width: 480px) {
+      padding-inline: 8px;
+    }
+    @media (max-width: 375px) {
+      padding-inline: 6px;
+    }
+  }
 }
 
 .title {
