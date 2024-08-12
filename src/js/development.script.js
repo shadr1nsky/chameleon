@@ -21,4 +21,40 @@ document.addEventListener("DOMContentLoaded", function () {
             service.removeEventListener('mouseenter', handleMove)
         })
     })
+
+
+    new Swiper('#swiperPortfolio', {
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        breakpoints: {
+            576: {
+                slidesPerView: 'auto',
+            },
+        }
+    });
+
+
+    new Swiper('#swiperParsing', {
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 100,
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            enabled: true,
+            delay: 5000,
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 })

@@ -1,4 +1,4 @@
-new Swiper('.swiperPromo', {
+new Swiper('#swiperPromo', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 1000,
@@ -8,7 +8,7 @@ new Swiper('.swiperPromo', {
     },
 });
 
-new Swiper('.swiperCarousel', {
+new Swiper('#swiperCarousel', {
     direction: 'horizontal',
     slidesPerView: '6',
     spaceBetween: 56,
@@ -19,7 +19,7 @@ new Swiper('.swiperCarousel', {
     // },
 });
 
-new Swiper('.swiperClients', {
+new Swiper('#swiperClients', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 20,
@@ -31,7 +31,7 @@ new Swiper('.swiperClients', {
     }
 });
 
-new Swiper('.swiperReviews', {
+new Swiper('#swiperReviews', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 20,
@@ -50,23 +50,6 @@ new Swiper('.swiperReviews', {
         },
         600: {
             slidesPerView: 2,
-        },
-    }
-});
-
-new Swiper('.swiperPortfolio', {
-    direction: 'horizontal',
-    slidesPerView: 1,
-    spaceBetween: 20,
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    breakpoints: {
-        576: {
-            slidesPerView: 'auto',
         },
     }
 });
