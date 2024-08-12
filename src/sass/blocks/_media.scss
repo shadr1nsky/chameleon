@@ -1,289 +1,271 @@
-@media (max-width: 1200px) {
-  .outstaffwork-text {
-    font-size: 100px;
-  }
-
-  .targets {
-    &__items {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-template-rows: auto;
-      grid-template-areas: unset;
-    }
-  }
-  .targets-item {
-    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
-      grid-area: unset;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  .nav {
-    &__wrapper {
-      padding-inline: 10px;
-      gap: 20px;
-    }
-  }
-
-  .nav-menu {
-    gap: 25px;
-  }
-
-  .outstaffwork {
-    &__items {
-      gap: 10px;
-    }
-  }
-  .outstaffwork-text {
-    font-size: 80px;
-  }
-
-  .howwork {
-    &__items {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-template-rows: auto;
-      grid-template-areas: unset;
-    }
-  }
-  .howwork-item {
-    height: 200px;
-    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
-      grid-area: unset;
-    }
-  }
-
-  .work-steps {
-    &__items {
-      gap: 5px;
-      grid-template-columns: repeat(1, minmax(300px, 1fr));
-      grid-auto-rows: 150px;
-    }
-  }
-  .work-steps-item {
-    &:nth-child(5n+5) {
-      grid-column: unset;
-    }
-    &__text {
-      font-size: 18px;
-      padding-left: 90px;
-    }
-  }
-
-
-  .parsing-swiper {
-    padding: 20px;
-  }
-  .parsing-swiper-slide {
-    &__title {
-      font-size: 24px;
-    }
-    &__descr {
-      font-size: 14px;
-    }
-    &__image {
-      top: -50px;
-      width: 250px;
-      height: 250px;
-    }
-  }
-
-  .feedback {
-    &__wrapper {
-      gap: 45px;
-    }
-    &__content {
-      gap: 10px;
-    }
-  }
-  .feedback-forms {
-    gap: 10px;
-  }
-  .feedback-send {
-    gap: 10px;
-  }
-  .feedback-send-button {
-    width: 300px;
-    height: 300px;
-  }
-
-  .footer-logo {
-    width: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 36px;
-  }
-  .subtitle {
-    font-size: 18px;
-  }
-
-  .nav-menu {
-    display: none;
-  }
-
-  .promo-title {
-    font-size: 44px;
-  }
-
-  .outstaffwork {
-    &__items {
-      padding-top: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      grid-template-areas: unset;
-    }
-  }
-  .outstaffwork-profit {
-    display: block;
-  }
-  .outstaffwork-text {
-    display: none;
-  }
-  .outstaffwork-item {
-    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
-      grid-area: unset;
-    }
-  }
-
-  .portfolio {
-    &__wrapper {
-      padding: 25px;
-    }
-  }
-  .portfolio-swiper {
-    padding: 25px;
-  }
-  .portfolio-watermark {
-    top: 55px;
-    font-size: 48px;
-  }
-
-  .parsing-swiper-slide {
-    &__descr {
-      display: none;
-    }
-  }
-
-  .feedback {
-    padding-bottom: 80px;
-  }
-  .feedback-send-button {
-    width: 200px;
-    height: 200px;
-  }
-
-  .footer {
-    &__wrapper {
-      padding-inline: 10px;
-    }
-  }
-  .footer-logo {
-    img {
-      width: 120px;
-      height: 120px;
-    }
-  }
-  .footer-mid-menu {
-    display: none;
-  }
-}
-
-@media (max-width: 640px) {
-  .title-icon {
-    margin-top: 0;
-  }
-
-  .footer-mid-company {
-    display: none;
-  }
-
-  .work-steps-item {
-    &__title {
-      padding-left: 80px;
-    }
-  }
-
-
-  .portfolio-swiper {
-    margin-top: 0;
-  }
-  .portfolio-watermark {
-    display: none;
-  }
-
-
-  .parsing-swiper {
-    height: 300px;
-  }
-  .swiper-pagination-bullet {
-    width: 50px !important;
-  }
-  .parsing-swiper-slide {
-    &__title {
-      font-size: 16px;
-    }
-    &__descr {
-      font-size: 12px;
-    }
-    &__image {
-      width: 200px;
-      height: 200px;
-    }
-  }
-
-  .feedback {
-    padding-bottom: 40px;
-    &__wrapper {
-      flex-direction: column;
-      gap: 40px;
-    }
-  }
-  .feedback-send {
-    gap: 20px;
-  }
-
-  .targets-item {
-    min-height: 150px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 24px;
-  }
-  .subtitle {
-    font-size: 14px;
-  }
-
-  .button-feedback {
-    font-size: 14px;
-    padding: 12.5px;
-  }
-
-  .outstaffwork-profit {
-    font-size: 24px;
-  }
-
-  .portfolio-swiper-slide {
-    &__image {
-      height: 250px;
-    }
-  }
-
-  .parsing-swiper-slide {
-    &__image {
-      right: -30px;
-    }
-  }
-
-  .promo-title {
-    font-size: 33px;
-  }
-
-  .work-steps-item {
-    &__title {
-      padding-left: 50px;
-    }
-  }
-}
+//@media (max-width: 1200px) {
+//  .outstaffwork-text {
+//    font-size: 100px;
+//  }
+//
+//  .targets {
+//    &__items {
+//      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//      grid-template-rows: auto;
+//      grid-template-areas: unset;
+//    }
+//  }
+//  .targets-item {
+//    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
+//      grid-area: unset;
+//    }
+//  }
+//}
+//
+//@media (max-width: 1024px) {
+//  .nav {
+//    &__wrapper {
+//      padding-inline: 10px;
+//      gap: 20px;
+//    }
+//  }
+//
+//  .nav-menu {
+//    gap: 25px;
+//  }
+//
+//  .outstaffwork {
+//    &__items {
+//      gap: 10px;
+//    }
+//  }
+//  .outstaffwork-text {
+//    font-size: 80px;
+//  }
+//
+//  .howwork {
+//    &__items {
+//      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//      grid-template-rows: auto;
+//      grid-template-areas: unset;
+//    }
+//  }
+//  .howwork-item {
+//    height: 200px;
+//
+//    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
+//      grid-area: unset;
+//    }
+//  }
+//
+//  .work-steps {
+//    &__items {
+//      gap: 5px;
+//      grid-template-columns: repeat(1, minmax(300px, 1fr));
+//      grid-auto-rows: 150px;
+//    }
+//  }
+//  .work-steps-item {
+//    &:nth-child(5n+5) {
+//      grid-column: unset;
+//    }
+//
+//    &__text {
+//      font-size: 18px;
+//      padding-left: 90px;
+//    }
+//  }
+//
+//
+//  .parsing-swiper {
+//    padding: 20px;
+//  }
+//  .parsing-swiper-slide {
+//    &__title {
+//      font-size: 24px;
+//    }
+//
+//    &__descr {
+//      font-size: 14px;
+//    }
+//
+//    &__image {
+//      top: -50px;
+//      width: 250px;
+//      height: 250px;
+//    }
+//  }
+//
+//  .feedback {
+//    &__wrapper {
+//      gap: 45px;
+//    }
+//
+//    &__content {
+//      gap: 10px;
+//    }
+//  }
+//  .feedback-forms {
+//    gap: 10px;
+//  }
+//  .feedback-send {
+//    gap: 10px;
+//  }
+//  .feedback-send-button {
+//    width: 300px;
+//    height: 300px;
+//  }
+//
+//  .footer-logo {
+//    width: auto;
+//  }
+//}
+//
+//@media (max-width: 768px) {
+//  .nav-menu {
+//    display: none;
+//  }
+//
+//  .outstaffwork {
+//    &__items {
+//      padding-top: 20px;
+//      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//      grid-template-areas: unset;
+//    }
+//  }
+//  .outstaffwork-profit {
+//    display: block;
+//  }
+//  .outstaffwork-text {
+//    display: none;
+//  }
+//  .outstaffwork-item {
+//    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
+//      grid-area: unset;
+//    }
+//  }
+//
+//  .portfolio {
+//    &__wrapper {
+//      padding: 25px;
+//    }
+//  }
+//  .portfolio-swiper {
+//    padding: 25px;
+//  }
+//  .portfolio-watermark {
+//    top: 55px;
+//    font-size: 48px;
+//  }
+//
+//  .parsing-swiper-slide {
+//    &__descr {
+//      display: none;
+//    }
+//  }
+//
+//  .feedback {
+//    padding-bottom: 80px;
+//  }
+//  .feedback-send-button {
+//    width: 200px;
+//    height: 200px;
+//  }
+//
+//  .footer {
+//    &__wrapper {
+//      padding-inline: 10px;
+//    }
+//  }
+//  .footer-logo {
+//    img {
+//      width: 120px;
+//      height: 120px;
+//    }
+//  }
+//  .footer-mid-menu {
+//    display: none;
+//  }
+//}
+//
+//@media (max-width: 640px) {
+//  .footer-mid-company {
+//    display: none;
+//  }
+//
+//  .work-steps-item {
+//    &__title {
+//      padding-left: 80px;
+//    }
+//  }
+//
+//
+//  .portfolio-swiper {
+//    margin-top: 0;
+//  }
+//  .portfolio-watermark {
+//    display: none;
+//  }
+//
+//
+//  .parsing-swiper {
+//    height: 300px;
+//  }
+//  .swiper-pagination-bullet {
+//    width: 50px !important;
+//  }
+//  .parsing-swiper-slide {
+//    &__title {
+//      font-size: 16px;
+//    }
+//
+//    &__descr {
+//      font-size: 12px;
+//    }
+//
+//    &__image {
+//      width: 200px;
+//      height: 200px;
+//    }
+//  }
+//
+//  .feedback {
+//    padding-bottom: 40px;
+//
+//    &__wrapper {
+//      flex-direction: column;
+//      gap: 40px;
+//    }
+//  }
+//  .feedback-send {
+//    gap: 20px;
+//  }
+//
+//  .targets-item {
+//    min-height: 150px;
+//  }
+//}
+//
+//@media (max-width: 480px) {
+//  .button-feedback {
+//    font-size: 14px;
+//    padding: 12.5px;
+//  }
+//
+//  .outstaffwork-profit {
+//    font-size: 24px;
+//  }
+//
+//  .portfolio-swiper-slide {
+//    &__image {
+//      height: 250px;
+//    }
+//  }
+//
+//  .parsing-swiper-slide {
+//    &__image {
+//      right: -30px;
+//    }
+//  }
+//
+//  .work-steps-item {
+//    &__title {
+//      padding-left: 50px;
+//    }
+//  }
+//}

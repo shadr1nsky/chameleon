@@ -2,14 +2,17 @@
   font-family: "ActayWide";
   src: url("../fonts/ActayWide.otf");
 }
+
 @font-face {
   font-family: "Onest";
   src: url("../fonts/Onest.ttf");
 }
+
 @font-face {
   font-family: "JosefinSans";
   src: url("../fonts/JosefinSans.ttf");
 }
+
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins.ttf");
@@ -24,7 +27,6 @@
 @import 'base/layout';
 @import 'base/shared';
 
-@import 'blocks/title';
 @import 'blocks/button';
 
 @import 'blocks/nav';

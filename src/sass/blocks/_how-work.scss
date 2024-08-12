@@ -1,4 +1,4 @@
-.howwork {
+.how-work {
   &__items {
     display: grid;
     grid-template-columns: minmax(300px, 465px) minmax(200px, 386px) 56px minmax(200px, 344px);
@@ -10,7 +10,7 @@
   }
 }
 
-.howwork-item {
+.how-work-item {
   width: 100%;
   height: 100%;
   display: flex;
@@ -18,26 +18,32 @@
   border-radius: 36px;
   padding: 20px;
   overflow: hidden;
+
   &.item1 {
-    background: url(../images/howwork/big.png) center / cover no-repeat;
+    background: url("/images/how-work/big.png") center / cover no-repeat;
     grid-area: item1;
   }
+
   &.item2 {
-    background: url(../images/howwork/mini1.png) center / cover no-repeat;
+    background: url("/images/how-work/mini1.png") center / cover no-repeat;
     grid-column: item2 / wide;
   }
+
   &.item3 {
-    background: url(../images/howwork/mini2.png) center / cover no-repeat;
+    background: url("/images/how-work/mini2.png") center / cover no-repeat;
     grid-area: item3;
   }
+
   &.item4 {
-    background: url(../images/howwork/mini3.png) center / cover no-repeat;
+    background: url("/images/how-work/mini3.png") center / cover no-repeat;
     grid-area: item4;
   }
+
   &.item5 {
-    background: url(../images/howwork/mini4.png) center / cover no-repeat;
+    background: url("/images/how-work/mini4.png") center / cover no-repeat;
     grid-column: wide / item5;
   }
+
   &__descr {
     width: 100%;
     background-color: white;

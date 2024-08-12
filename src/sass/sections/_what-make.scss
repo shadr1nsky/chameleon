@@ -1,0 +1,33 @@
+.what-make {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+    gap: 20px;
+  }
+
+  &__item {
+  }
+}
+
+.what-make-item {
+  height: 100%;
+  padding: 40px 16px 20px;
+  border-radius: 30px;
+  background-color: rgb(249, 249, 249);
+
+
+  &__icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 12px;
+    margin-left: -16px;
+  }
+
+  &:hover {
+    background: linear-gradient(135.85deg, rgb(159, 225, 31) 5.677%, rgb(255, 221, 72) 62.201%, rgb(255, 146, 23) 104.807%);
+
+    .what-make-item__icon {
+      filter: brightness(0.2);
+    }
+  }
+}

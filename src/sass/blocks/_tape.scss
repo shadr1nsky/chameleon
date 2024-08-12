@@ -13,7 +13,11 @@
   &__item {
     display: flex;
     align-items: center;
+    font-family: 'Josefin Sans', serif;
     font-size: 32px;
+    font-weight: 500;
+    line-height: 46.4px;
+
     text-transform: uppercase;
     white-space: nowrap;
     padding-inline: 28px;

@@ -1,4 +1,4 @@
-.outstaffwork  {
+.out-staff-work {
   &__items {
     padding-top: 50px;
     display: grid;
@@ -13,7 +13,7 @@
   }
 }
 
-.outstaffwork-profit {
+.out-staff-work-profit {
   display: none;
   font-size: 28px;
   font-weight: 700;
@@ -21,7 +21,7 @@
   text-align: center;
 }
 
-.outstaffwork-text {
+.out-staff-work-text {
   display: flex;
   align-items: center;
   font-family: "Onest", sans-serif;
@@ -29,9 +29,11 @@
   font-weight: 600;
   opacity: .05;
   line-height: 100%;
+
   &:nth-child(1) {
     grid-area: text1;
   }
+
   &:nth-child(2) {
     grid-area: text2;
     direction: rtl;
@@ -39,7 +41,7 @@
   }
 }
 
-.outstaffwork-item {
+.out-staff-work-item {
   display: flex;
   align-items: center;
   height: 120px;
@@ -47,37 +49,46 @@
   position: relative;
   overflow: hidden;
   padding: 40px 30px;
+
   &:hover {
-    background:
-      linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%) padding-box,
-      linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%) border-box;
-    .outstaffwork-item__icon {
+    background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) padding-box,
+    linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) border-box;
+
+    .out-staff-work-item__icon {
       display: block;
     }
   }
+
   &.item1 {
     grid-area: item1;
   }
+
   &.item2 {
     grid-area: item2;
   }
+
   &.item3 {
     grid-area: item3;
   }
+
   &.item4 {
     grid-area: item4;
   }
+
   &.item5 {
     grid-area: item5;
   }
+
   &.item6 {
     grid-area: item6;
   }
+
   &__descr {
     font-size: 16px;
     font-weight: 400;
     font-family: "Onest", sans-serif;
   }
+
   &__icon {
     position: absolute;
     display: none;
