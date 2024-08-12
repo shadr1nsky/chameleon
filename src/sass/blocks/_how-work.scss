@@ -1,12 +1,24 @@
 .how-work {
   &__items {
     display: grid;
-    grid-template-columns: minmax(300px, 465px) minmax(200px, 386px) 56px minmax(200px, 344px);
+    grid-template-columns: minmax(300px, 1fr) minmax(200px, 1fr) 56px minmax(200px, 1fr);
     grid-template-rows: 300px 230px;
     grid-template-areas:
     'item1 item2 wide item3'
     'item1 item4 wide item5';
     gap: 23px;
+    @media(max-width: 1024px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-rows: auto;
+      grid-template-areas: unset;
+      .howwork-item {
+        height: 200px;
+
+        &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
+          grid-area: unset;
+        }
+      }
+    }
   }
 }
 
@@ -42,6 +54,15 @@
   &.item5 {
     background: url("/images/how-work/mini4.png") center / cover no-repeat;
     grid-column: wide / item5;
+  }
+
+  @media(max-width: 1024px) {
+
+    height: 200px;
+
+    &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
+      grid-area: unset;
+    }
   }
 
   &__descr {
