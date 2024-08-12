@@ -53,6 +53,13 @@ p, div, span {
   }
 }
 
+.title {
+  &-icon {
+    @include fluid-type(32px, 77px);
+    width: 1em;
+  }
+}
+
 .subtitle {
   max-width: 880px;
   margin-bottom: 50px;
