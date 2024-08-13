@@ -41,11 +41,7 @@
   flex-direction: column;
   gap: 12.5px;
   width: 180px;
-  pointer-events: none;
-  bottom: calc(100%);
-  opacity: 0;
-  transition: all .2s;
-
+  bottom: 30px;
   &__mouse {
     margin-inline: auto;
     width: 28px;
@@ -61,11 +57,5 @@
     font-weight: 600;
     text-align: center;
     color: #000000;
-  }
-
-  &.active {
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: all;
   }
 }

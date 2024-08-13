@@ -4,6 +4,12 @@
     background-color: #F9F9F9;
     border-radius: 50px;
     position: relative;
+    @media (max-width: 768px) {
+      padding: 30px;
+    }
+    @media (max-width: 576px) {
+      padding: 25px;
+    }
   }
 }
 
@@ -15,6 +21,15 @@
   top: 55px;
   right: 120px;
   z-index: 1;
+  @media (max-width: 768px) {
+    font-size: 60px;
+    top: 40px;
+    right: 60px;
+  }
+  @media (max-width: 576px) {
+    font-size: 40px;
+    right: 40px ;
+  }
 }
 
 .portfolio-swiper {
@@ -27,6 +42,9 @@
     gap: 18px;
     align-items: center;
     justify-content: end;
+    @media (max-width: 768px) {
+      margin-top: 15px;
+    }
 
     .swiper-button-disabled {
       background: #EDEDED;

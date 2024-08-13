@@ -25,17 +25,6 @@ const initFaq = () => {
     }))
 }
 
-const initScrolling = () => {
-    const el = document.querySelector(".promo-scroll");
-    document.addEventListener("scroll", (e) => {
-        if (document.documentElement.scrollTop > 0) {
-            el.classList.remove("active");
-        } else {
-            el.classList.add("active");
-        }
-    })
-}
-
 new Swiper('#swiperPromo', {
     direction: 'horizontal',
     slidesPerView: 1,
@@ -99,5 +88,4 @@ hamburger.onclick = function () {
 
 document.addEventListener('DOMContentLoaded', () => {
     initFaq()
-    initScrolling()
 })

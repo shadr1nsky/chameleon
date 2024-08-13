@@ -82,8 +82,8 @@ html.unscroll {
 .hamburger {
   display: none;
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 35px;
+  right: 35px;
   width: 40px;
   height: 40px;
   stroke: #191B20;
@@ -112,6 +112,7 @@ html.unscroll {
   }
   @media (max-width: 768px) {
     display: flex;
+    margin-right: 10px;
   }
 }
 
