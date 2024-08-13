@@ -1,16 +1,12 @@
 .faq {
-  &__head {
-    padding-inline: 32px;
-    @media(max-width: 1024px) {
-      padding-inline: 0;
-    }
-  }
-
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 32px 64px;
     @media(max-width: 1024px) {
       grid-template-columns: repeat(auto-fill, 100%);
+      gap: 16px 32px;
+
     }
   }
 }
@@ -20,10 +16,16 @@
   display: flex;
   flex-direction: column;
   padding-inline: 32px;
+  margin-inline: -32px;
   padding-block: 26px 0;
   transition: padding .2s;
+
   @media(max-width: 1024px) {
     padding-inline: 16px;
+    margin-inline: -16px;
+  }
+  @media(max-width: 480px) {
+    margin-inline: 0;
   }
 
   &__button {
