@@ -16,6 +16,9 @@
       gap: 20px;
       padding: 20px;
     }
+    @media (max-width: 480px) {
+      gap: 0;
+    }
   }
 
   &__left {
@@ -43,11 +46,13 @@
     @media (max-width: 1024px) {
       margin-left: 0;
     }
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 }
 
 .footer-logo {
-
   img {
     max-width: 140px;
   }
@@ -67,8 +72,7 @@
   padding: 8px;
   gap: 50px;
   @media (max-width: 480px) {
-    flex-direction: column;
-
+    display: none;
   }
 
   &__link {

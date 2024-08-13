@@ -1,5 +1,8 @@
 .nav {
   position: relative;
+  @media (max-width: 576px) {
+    position: sticky;
+  }
   &__wrapper {
     position: absolute;
     display: flex;
