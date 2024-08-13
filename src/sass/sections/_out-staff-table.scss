@@ -5,6 +5,22 @@
   max-width: 1024px;
   width: 100%;
   margin-bottom: 8px;
+  position: relative;
+  &:before {
+    content: '';
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 152px;
+    background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) border-box;
+    border-radius: 20px;
+    @media (max-width: 768px) {
+      height: 106px;
+    }
+    @media (max-width: 480px) {
+      height: 74px;
+    }
+  }
 
   &__title {
     display: flex;
@@ -39,14 +55,9 @@
     }
 
     &.primary {
-      background: -webkit-linear-gradient(45.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) border-box;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
       background-clip: padding-box;
       border-bottom: none;
-      display: table-row;
-
+      position: relative;
       td {
         &:last-of-type {
           border-bottom-right-radius: 20px;
