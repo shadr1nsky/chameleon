@@ -25,11 +25,6 @@ const initFaq = () => {
                 faqAnswerEl.style.maxHeight = `${faqAnswerEl.scrollHeight}px`
             }
         }));
-        window.addEventListener("resize", (() => {
-            if (!!activeEl.dataset.open && parseInt(activeAnswerEl.style.maxHeight) !== activeAnswerEl.scrollHeight) {
-                activeAnswerEl.style.maxHeight = `${activeAnswerEl.scrollHeight}px`
-            }
-        }))
     }))
 }
 
@@ -97,9 +92,9 @@ new Swiper('#swiperReviews', {
 
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu')
-    html = document.querySelector('html')
+html = document.querySelector('html')
 
-hamburger.onclick = function (){
+hamburger.onclick = function () {
     menu.classList.toggle('active');
     hamburger.classList.toggle('active');
     html.classList.toggle('unscroll')
