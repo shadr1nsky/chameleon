@@ -3,8 +3,11 @@
 
   &__wrapper {
     display: flex;
-    flex-wrap: wrap;
     gap: 90px;
+    @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
   }
 
   &__content {
@@ -16,7 +19,6 @@
 }
 
 .feedback-forms {
-  flex: 1 1 auto;
   display: grid;
   grid-template-areas:
           "name telegram"
@@ -25,6 +27,18 @@
           "description description";
   grid-template-rows: 47px 47px 47px 150px;
   gap: 20px;
+  @media screen and (max-width: 1280px) {
+    grid-template-areas:
+          "name"
+          "telegram"
+          "mail"
+          "number"
+          "company"
+          "description";
+    grid-template-rows: unset;
+    grid-template-columns: 1fr;
+
+  }
 }
 
 .feedback-form {
@@ -97,6 +111,7 @@
   align-items: center;
   flex-direction: column;
   gap: 27px;
+  width: 100%;
 }
 
 .feedback-send-button {
@@ -106,8 +121,14 @@
   gap: 14px;
   width: 351px;
   height: 351px;
+  border-radius: 50%;
   background: linear-gradient(133.55deg, rgb(159, 225, 31) 10.819%, rgb(255, 221, 72) 56.573%, rgb(255, 146, 23) 89.705%);
-  border-radius: 100%;
+  @media screen and (max-width: 1024px) {
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+    padding: 24px;
+  }
 
   &__text {
     font-size: 24px;
