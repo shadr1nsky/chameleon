@@ -9,6 +9,9 @@
     'item1 item2 wide item3'
     'item1 item4 wide item5';
     gap: 23px;
+    @media (max-width:1280px) {
+      grid-template-columns: 1fr minmax(300px, 1fr) 34px minmax(200px, 1fr);
+    }
     @media(max-width: 1024px) {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-template-rows: auto;
