@@ -11,21 +11,49 @@
 </head>
 <body>
 <header>
+    <div class="menu">
+        <div class="menu__wrapper">
+            <div class="menu-top">
+                <div class="menu-logo">
+                    <img src="icons/logo.svg" alt="">
+                </div>
+            </div>
+            <ul class="menu-items">
+                <li class="menu-item">
+                    <a class="menu-item__link" href="/">Тестирование</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link" href="#">Аутстафф</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link current" href="/development.html">Разработка</a>
+                </li>
+            </ul>
+            <div class="button-feedback">Связаться с нами</div>
+        </div>
+    </div>
     <nav class="nav">
         <div class="nav__wrapper">
             <div class="nav-logo">
                 <img src="icons/logo.svg" alt="">
             </div>
-
             <div class="nav-menu">
                 <a class="nav-menu__link" href="/">Тестирование</a>
                 <a class="nav-menu__link" href="#">Аутстафф</a>
                 <a class="nav-menu__link current" href="/development.html">Разработка</a>
             </div>
-
             <a class="nav-button button-feedback" href="#feedback">Связаться с нами</a>
         </div>
     </nav>
+    <div class="hamburger">
+        <svg viewbox="0 0 60 40">
+            <g stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path id="top-line" d="M10,10 L50,10 Z"></path>
+                <path id="middle-line" d="M10,20 L50,20 Z"></path>
+                <path id="bottom-line" d="M10,30 L50,30 Z"></path>
+            </g>
+        </svg>
+    </div>
 </header>
 
 <main>
@@ -54,7 +82,7 @@
     </section>
 
     <div class="sections">
-        <section class="section services" id="services">
+        <section class="hidden section services" id="services">
             <div class="section__head">
                 <h2 class="title font-actay font-xl">Услуги</h2>
                 <img src="icons/title/lines.svg" alt="" class="title-icon title-icon--lines">
@@ -152,7 +180,7 @@
             </ul>
         </section>
 
-        <section class="section work-steps">
+        <section class="hidden section work-steps">
             <div class="section__head">
                 <h2 class="title font-xl font-actay">Этапы работы</h2>
                 <img src="icons/title/lines.svg" alt="" class="title-icon title-icon--lines">
@@ -213,7 +241,7 @@
             </div>
         </section>
 
-        <section class="section technology">
+        <section class="hidden section technology">
             <div class="technology__container">
                 <div class="section__head">
                     <h2 class="title font-actay font-xl">Технологии</h2>
@@ -267,7 +295,7 @@
 
         </section>
 
-        <section class="section portfolio">
+        <section class="hidden section portfolio">
             <div class="portfolio__wrapper">
                 <div class="top">
                     <h2 class="title">Портфолио</h2>
@@ -326,7 +354,7 @@
             </div>
         </section>
 
-        <section class="section parsing">
+        <section class="hidden section parsing">
             <div class="top pb50">
                 <h2 class="title">Парсинг услуги</h2>
                 <img src="icons/title/code.svg" alt="" class="title-icon">
@@ -410,7 +438,7 @@
             </div>
         </section>
 
-        <section class="section targets">
+        <section class="hidden ection targets">
             <div class="top pb40">
                 <h2 class="title">Основные цели ожидания парсинг приложения:</h2>
                 <img src="icons/title/lines.svg" alt="" class="title-icon">
@@ -461,7 +489,7 @@
             </div>
         </section>
 
-        <section id="faq" class="section faq">
+        <section id="faq" class="hidden section faq">
             <div class="section__head faq__head">
                 <h2 class="title font-xl font-actay">Часто задаваемые вопросы</h2>
                 <img src="icons/title/code.svg" width="76" height="45" alt="" class="title-icon title-icon--code">

@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
         autoHeight: true,
         loop: true,
         autoplay: {
-            enabled: false,
             delay: 5000,
         },
     });
@@ -94,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         speed: 1000,
         autoplay: {
-            enabled: true,
             delay: 5000,
         },
 
@@ -103,6 +101,16 @@ document.addEventListener("DOMContentLoaded", function () {
             clickable: true,
         },
     });
+
+    const hamburger = document.querySelector('.hamburger'),
+        menu = document.querySelector('.menu')
+        html = document.querySelector('html')
+
+    hamburger.onclick = function (){
+        menu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        html.classList.toggle('unscroll')
+    }
 
     initFaq()
 })

@@ -101,6 +101,16 @@ new Swiper('#swiperReviews', {
     }
 });
 
+const hamburger = document.querySelector('.hamburger'),
+    menu = document.querySelector('.menu')
+    html = document.querySelector('html')
+
+hamburger.onclick = function (){
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    html.classList.toggle('unscroll')
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initFaq()
     initScrolling()

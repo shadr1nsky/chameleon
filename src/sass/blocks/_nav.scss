@@ -25,6 +25,9 @@
   align-items: center;
   padding: 8px;
   gap: 50px;
+  @media (max-width: 768px) {
+    display: none;
+  }
   &__link {
     font-size: 14px;
     font-weight: 500;
@@ -36,4 +39,7 @@
 
 .nav-button {
   margin-left: auto;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
