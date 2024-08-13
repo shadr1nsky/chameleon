@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
             enabled: true,
             delay: 5000,
         },
-
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
