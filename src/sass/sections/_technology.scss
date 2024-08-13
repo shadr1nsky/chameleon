@@ -1,6 +1,7 @@
 @import '../lib/fluid';
 
 .technology {
+  padding-bottom: 3px;
   &__container {
     border-radius: 50px;
     padding: 50px 50px 0;
@@ -25,7 +26,7 @@
   align-items: end;
   justify-content: center;
   @include fluid-type(12px, 20px);
-  height: 27em;
+  height: 30em;
   @media(max-width: 768px) {
     height: 12em;
   }

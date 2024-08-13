@@ -2,6 +2,7 @@
 
 .work-steps {
   &__items {
+    padding-top: 30px;
     display: grid;
     grid-auto-rows: 170px;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));

@@ -4,10 +4,13 @@
   border-collapse: collapse;
   max-width: 1024px;
   width: 100%;
+  margin-bottom: 8px;
 
   &__title {
     display: flex;
     width: min-content;
+    margin-top: 22px;
+    margin-bottom: 10px;
   }
 
   &__time {
@@ -61,14 +64,14 @@
     }
 
     &:not(:nth-child(1)) {
-      text-align: right;
+      text-align: center;
     }
 
     &:not(:empty) {
       font-size: 24px;
       line-height: 32px;
       font-weight: 400;
-      padding-block: 36px;
+      padding-block: 39px;
       @media(max-width: 768px) {
         font-size: 16px;
         line-height: 24px;
@@ -83,7 +86,7 @@
       }
     }
 
-    padding-block: 20px;
+    padding-block: 10px;
     padding-inline: 22px;
     @media(max-width: 480px) {
       padding-block: 16px;

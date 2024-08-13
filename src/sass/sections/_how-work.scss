@@ -1,7 +1,9 @@
 .how-work {
   &__items {
+    padding-top: 10px;
+    margin-bottom: 18px;
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) minmax(200px, 1fr) 56px minmax(200px, 1fr);
+    grid-template-columns: minmax(464px, 1fr) minmax(409px, 1fr) 34px minmax(200px, 1fr);
     grid-template-rows: 300px 230px;
     grid-template-areas:
     'item1 item2 wide item3'
@@ -13,7 +15,6 @@
       grid-template-areas: unset;
       .howwork-item {
         height: 200px;
-
         &.item1, &.item2, &.item3, &.item4, &.item5, &.item6 {
           grid-area: unset;
         }
@@ -28,12 +29,16 @@
   display: flex;
   align-items: end;
   border-radius: 36px;
-  padding: 20px;
+  padding: 20px 20px 23px 20px;
   overflow: hidden;
 
   &.item1 {
     background: url("/images/how-work/big.png") center / cover no-repeat;
     grid-area: item1;
+    padding: 20px 20px 30px 20px;
+    .how-work-item__descr {
+      padding: 30px 20px;
+    }
   }
 
   &.item2 {
@@ -66,9 +71,10 @@
   }
 
   &__descr {
+    font-size: 14px;
     width: 100%;
     background-color: white;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 20px;
   }
 }

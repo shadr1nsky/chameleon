@@ -2,7 +2,8 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-    gap: 32px 64px;
+    gap: 0 100px;
+    padding-top: 20px;
     @media(max-width: 1024px) {
       grid-template-columns: repeat(auto-fill, 100%);
       gap: 16px 32px;
@@ -39,7 +40,7 @@
     line-height: 22.95px;
     text-align: left;
     color: #191B20;
-    padding-bottom: 26px;
+    padding-bottom: 18px;
     border-bottom: 1px solid #CACDD6;
 
     > span {

@@ -89,14 +89,8 @@ new Swiper('#swiperReviews', {
     },
 
     breakpoints: {
-        1200: {
-            slidesPerView: 4,
-        },
-        900: {
-            slidesPerView: 3,
-        },
-        600: {
-            slidesPerView: 2,
+        400: {
+            slidesPerView: 'auto',
         },
     }
 });

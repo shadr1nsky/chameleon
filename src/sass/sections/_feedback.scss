@@ -1,9 +1,14 @@
-.feedback {
-  padding-bottom: 171px;
+.feedback.pb90 {
+  padding-bottom: 90px;
+}
 
+.feedback {
+  padding-bottom: 163px;
   &__wrapper {
+    padding-top: 10px;
+    padding-right: 130px;
     display: flex;
-    gap: 90px;
+    gap: 120px;
     @media screen and (max-width: 1024px) {
       flex-wrap: wrap;
       gap: 24px;
@@ -63,6 +68,9 @@
     height: 100%;
     outline: none;
   }
+  textarea {
+    padding-top: 10px;
+  }
 
   &.name {
     grid-area: name;
@@ -107,11 +115,10 @@
 }
 
 .feedback-send {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   flex-direction: column;
   gap: 27px;
-  width: 100%;
 }
 
 .feedback-send-button {
