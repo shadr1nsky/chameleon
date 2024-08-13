@@ -39,7 +39,9 @@
     }
 
     &.primary {
-      background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) border-box center / cover no-repeat;
+      background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) border-box no-repeat;
+      background-position: center;
+      background-size: 100%;
       background-clip: padding-box;
       border-bottom: none;
 
