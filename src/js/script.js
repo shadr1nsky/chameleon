@@ -38,6 +38,7 @@ new Swiper('#swiperPromo', {
     slidesPerView: 1,
     spaceBetween: 1000,
     loop: true,
+    autoHeight: true,
     autoplay: {
         delay: 5000,
     },

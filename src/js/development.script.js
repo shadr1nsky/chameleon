@@ -57,6 +57,17 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     })
 
+    new Swiper('#swiperPromo', {
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 1000,
+        autoHeight: true,
+        loop: true,
+        autoplay: {
+            enabled: false,
+            delay: 5000,
+        },
+    });
 
     new Swiper('#swiperPortfolio', {
         direction: 'horizontal',
