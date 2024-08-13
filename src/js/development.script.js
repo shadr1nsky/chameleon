@@ -28,6 +28,17 @@ const initFaq = () => {
     }))
 }
 
+const initScrolling = () => {
+    const el = document.querySelector(".promo-scroll");
+    document.addEventListener("scroll", (e) => {
+        if (document.documentElement.scrollTop > 0) {
+            el.classList.remove("active");
+        } else {
+            el.classList.add("active");
+        }
+    })
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const servicesContainer = document.querySelectorAll("[data-services-item]");
     servicesContainer.forEach(service => {
@@ -107,5 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     initFaq()
+    initScrolling()
 })
 
