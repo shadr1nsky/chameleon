@@ -63,7 +63,6 @@ gulp.task('icons', function () {
 
 gulp.task('images', function () {
     return gulp.src("src/images/**/*")
-        .pipe(imagemin())
         .pipe(gulp.dest("dist/images"))
         .pipe(browserSync.stream());
 });
