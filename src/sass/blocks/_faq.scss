@@ -1,58 +1,111 @@
 .faq {
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-between;
-    padding-inline: 30px;
+  &__head {
+    padding-inline: 32px;
+    @media(max-width: 1024px) {
+      padding-inline: 0;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    @media(max-width: 1024px) {
+      grid-template-columns: repeat(auto-fill, 100%);
+    }
   }
 }
 
 .faq-item {
+
   display: flex;
   flex-direction: column;
-  padding: 30px 30px 0 30px;
-  width: 670px;
-  border-radius: 30px;
-  &__title {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    color: #191B20;
-    padding-bottom: 20px;
-    font-family: "Onest", sans-serif;
+  padding-inline: 32px;
+  padding-block: 26px 0;
+  transition: padding .2s;
+  @media(max-width: 1024px) {
+    padding-inline: 16px;
   }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.95px;
+    text-align: left;
+    color: #191B20;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #CACDD6;
+
+    > span {
+      display: block;
+      max-width: 610px;
+    }
+  }
+
   &__arrow {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 45px;
     height: 45px;
-    background: linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%);
+    background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%);
     border-radius: 100%;
     fill: #191B20;
+
     svg {
+      transition: all .2s;
       width: 14px;
       height: 14px;
     }
   }
+
   &__answer {
     font-size: 18px;
-    padding-bottom: 30px;
-    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease;
   }
-  &+& {
-    .faq-item__title {
-      border-bottom: 1px solid #191B20;
+
+  &[data-open="true"] {
+    border-radius: 30px;
+    background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%);
+    padding-block: 26px 20px;
+
+    .faq-item__button {
+      border-bottom-color: #191B20;
+    }
+
+    .faq-item__answer {
+      padding-top: 26px;
+    }
+
+    .faq-item__arrow {
+      background: #191B20;
+
+      svg {
+        transform: rotate(90deg);
+        fill: white;
+        stroke: white;
+      }
     }
   }
 }
 
 .faq-item[open] {
-  background: linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%);
+  background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%);
+
   .faq-item__arrow {
     fill: #FFFFFF;
     background: #191B20;
+
     svg {
       transform: rotate(90deg);
     }
