@@ -2,7 +2,6 @@
   "name": "my-project",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "gulp",
     "gh-page": "gh-pages -d dist"
