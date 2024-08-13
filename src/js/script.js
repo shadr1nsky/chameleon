@@ -19,7 +19,7 @@ const initFaq = () => {
                 })
                 faqEl.dataset.open = "true"
                 faqEl.classList.add("active");
-                faqAnswerEl.style.maxHeight = `${faqAnswerEl.scrollHeight}px`
+                faqAnswerEl.style.maxHeight = `${faqAnswerEl.scrollHeight+27}px`
             }
         }));
     }))
@@ -32,7 +32,7 @@ new Swiper('#swiperPromo', {
     loop: true,
     autoHeight: true,
     autoplay: {
-        delay: 5000,
+        delay: 2000,
     },
 });
 
