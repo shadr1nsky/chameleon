@@ -33,7 +33,7 @@
   overflow: hidden;
 
   &.item1 {
-    background: url("/images/how-work/big.png") center / cover no-repeat;
+    background: url("../images/how-work/big.png") center / cover no-repeat;
     grid-area: item1;
     padding: 20px 20px 30px 20px;
     .how-work-item__descr {
@@ -42,22 +42,22 @@
   }
 
   &.item2 {
-    background: url("/images/how-work/mini1.png") center / cover no-repeat;
+    background: url("../images/how-work/mini1.png") center / cover no-repeat;
     grid-column: item2 / wide;
   }
 
   &.item3 {
-    background: url("/images/how-work/mini2.png") center / cover no-repeat;
+    background: url("../images/how-work/mini2.png") center / cover no-repeat;
     grid-area: item3;
   }
 
   &.item4 {
-    background: url("/images/how-work/mini3.png") center / cover no-repeat;
+    background: url("../images/how-work/mini3.png") center / cover no-repeat;
     grid-area: item4;
   }
 
   &.item5 {
-    background: url("/images/how-work/mini4.png") center / cover no-repeat;
+    background: url("../images/how-work/mini4.png") center / cover no-repeat;
     grid-column: wide / item5;
   }
 
