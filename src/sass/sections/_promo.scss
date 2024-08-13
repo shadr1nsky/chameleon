@@ -1,3 +1,6 @@
+@import "../lib/fluid";
+
+
 .promo {
   &__wrapper {
     background: url("../images/promo/background.png") center / cover no-repeat;
@@ -12,13 +15,13 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 1215px;
-  font-size: 66px;
+  @include fluid-type(32px, 66px);
   font-weight: 700;
   text-align: center;
   margin-inline: auto;
   overflow: hidden;
   font-family: "ActayWide", sans-serif;
+
   &__wrapper {
     display: flex;
     align-items: center;
@@ -32,25 +35,37 @@
 
 .promo-scroll {
   position: absolute;
-  left:50%;
-  transform:translateX(-50%);
-  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   gap: 12.5px;
   width: 180px;
+  pointer-events: none;
+  bottom: calc(100%);
+  opacity: 0;
+  transition: all .2s;
+
   &__mouse {
     margin-inline: auto;
     width: 28px;
   }
+
   &__arrow {
     margin-inline: auto;
     height: 28px;
   }
+
   &__text {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
     color: #000000;
+  }
+
+  &.active {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: all;
   }
 }
