@@ -1,25 +1,59 @@
 .footer {
-  &__wrapper {
-    display: flex;
+  padding: 15px;
+  background: linear-gradient(#F4F4F4, #F4F4F4) padding-box,
+  linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%) border-box;
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding-inline: 36px;
     border-top: 1px solid transparent;
-    background:
-      linear-gradient(#F4F4F4, #F4F4F4) padding-box,
-      linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%) border-box;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
   }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: 1024px) {
+      justify-content: center;
+    }
+  }
+
+  &__middle {
+
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media (max-width: 1024px) {
+      justify-content: center;
+    }
+  }
+
   .button-feedback {
     font-family: "Poppins", sans-serif;
+    width: max-content;
+    margin-left: auto;
+    @media (max-width: 1024px) {
+      margin-left: 0;
+    }
   }
 }
 
 .footer-logo {
-  width: 190px;
+
   img {
-    width: 140px;
-    height: 140px;
+    max-width: 140px;
   }
 }
 
@@ -36,12 +70,18 @@
   align-items: center;
   padding: 8px;
   gap: 50px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+
+  }
+
   &__link {
     font-size: 14px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
   }
 }
+
 .footer-mid-company {
   text-align: center;
   font-size: 12px;
