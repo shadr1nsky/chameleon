@@ -1,9 +1,14 @@
+@import "../lib/fluid";
+
 .work-steps {
   &__items {
     display: grid;
     grid-auto-rows: 170px;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 14px;
+    @media(max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -18,38 +23,92 @@
   border-radius: 20px;
   background-color: #F4F4F4;
   overflow: hidden;
+
   &:nth-child(5n+5) {
-    grid-column: 1 / 3;
+    @media(min-width: 1024px) {
+      grid-column: 1 / 3;
+    }
   }
+
   &__title {
     display: flex;
     padding-left: 180px;
     width: 100%;
+    @media(max-width: 768px) {
+      padding-left: 6em;
+    }
   }
+
   &__number {
     position: absolute;
     color: #FF971B;
     font-size: 150px;
-    left: -40px;
-    bottom: -40px;
+    line-height: 1;
+    @include fluid-type(72px, 150px);
+    left: 0;
+    bottom: 0;
+    transform: translate(calc(-50% + 60px), 25%);
+    @media(max-width: 768px) {
+      transform: none;
+    }
   }
+
   &__text {
     display: inline-flex;
     max-width: 400px;
-    font-size: 28px;
+    @include fluid-type(16px, 28px);
     font-weight: 700;
     text-transform: uppercase;
     color: #191B20;
     z-index: 1;
   }
+
   &__descr {
     display: none;
     color: #191B20;
   }
+
+  @media (max-width: 768px) {
+    justify-content: unset;
+    align-items: unset;
+    background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%);
+
+    .work-steps-item {
+      &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+        gap: 10px;
+        text-align: end;
+      }
+
+      &__number {
+        color: #000000;
+        position: static;
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      &__text {
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: none;
+      }
+
+      &__descr {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
+
   &:hover {
     justify-content: unset;
     align-items: unset;
-    background: linear-gradient(90.00deg, rgb(159, 225, 31),rgb(255, 221, 72) 58%,rgb(255, 146, 23) 100%);
+    background: linear-gradient(90.00deg, rgb(159, 225, 31), rgb(255, 221, 72) 58%, rgb(255, 146, 23) 100%);
+
     .work-steps-item {
       &__title {
         display: flex;
@@ -57,17 +116,20 @@
         justify-content: space-between;
         padding-left: 0;
       }
+
       &__number {
         color: #000000;
         position: static;
         font-weight: 700;
         font-size: 24px;
       }
+
       &__text {
         font-weight: 400;
         font-size: 16px;
         text-transform: none;
       }
+
       &__descr {
         display: block;
         font-weight: 400;
