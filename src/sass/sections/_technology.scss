@@ -1,11 +1,13 @@
-.technology {
-  border-radius: 50px;
-  background-color: #F9F9F9;
+@import '../lib/fluid';
 
-  &__wrapper {
-    overflow: hidden;
-    height: calc(1.16 * min(900px, 35vw));
+.technology {
+  &__container {
+    border-radius: 50px;
+    padding: 50px 50px 0;
+    background-color: #F9F9F9;
   }
+
+
 }
 
 @property --angle {
@@ -16,65 +18,28 @@
 
 .system {
   position: relative;
-  width: 100%;
-  aspect-ratio: 1;
+  width: calc(100% + 100px);
+  margin-inline: -50px;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  @include fluid-type(12px, 20px);
+  height: 27em;
+  @media(max-width: 768px) {
+    height: 12em;
+  }
 
-  &__center {
+  &__orbits {
     position: absolute;
+    height: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
+  }
+
+  &__center {
     z-index: 1;
-  }
-
-  &__circle {
-    &--outline {
-      width: 94px;
-      border: 1px solid #9FE11F;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      position: absolute;
-      top: -3px;
-      left: 40px;
-    }
-
-    &--fill {
-      background-color: #FFDD48;
-      width: 78px;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      position: absolute;
-      right: 50px;
-      bottom: -98px;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  &__text {
-    font-family: Onest, serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 25.5px;
-    text-align: center;
-    border-radius: 64px;
-    padding-block: 18px;
-    white-space: nowrap;
-    color: white;
-
-    &--client {
-      transform: rotate(-12deg);
-      background-color: #FF9217;
-      min-width: 460px;
-      width: max-content;
-    }
-
-    &--server {
-      transform: translate(0px, -50px) rotate(9deg);
-      background-color: #9FE11F;
-      width: max-content;
-      min-width: 380px;
-
-    }
   }
 
   &__orbit {
@@ -92,7 +57,7 @@
     transform: translate(-50%, -50%);
 
     &--small {
-      --radius: min(768px, 20vw);
+      --radius: 14em;
       transform: translate(-50%, -50%) rotate(-215deg);
       animation: spin infinite 20s linear;
       @keyframes spin {
@@ -103,10 +68,13 @@
           transform: translate(-50%, -50%) rotate(145deg);
         }
       }
+      @media(max-width: 480px) {
+        display: none;
+      }
     }
 
     &--big {
-      --radius: min(900px, 25vw);
+      --radius: 18em;
       animation: spin-2 infinite 30s linear;
       @keyframes spin-2 {
         from {
@@ -115,6 +83,9 @@
         to {
           transform: translate(-50%, -50%) rotate(-360deg);
         }
+      }
+      @media(max-width: 480px) {
+        display: none;
       }
     }
 
@@ -125,10 +96,10 @@
     display: block;
     aspect-ratio: 1;
     border-radius: 50%;
-    width: 84px;
+    width: 4em;
     position: absolute;
-    left: calc(50% - 42px);
-    top: calc(50% - 42px);
+    left: calc(50% - 2em);
+    top: calc(50% - 2em);
 
     background: #333;
 
@@ -222,6 +193,58 @@
   }
 }
 
+.system-center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-5%);
+
+  &__circle {
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    &--outline {
+      width: 4.7em;
+      border: 1px solid #9FE11F;
+    }
+
+    &--fill {
+      background-color: #FFDD48;
+      width: 3.9em;
+      align-self: end;
+    }
+  }
+
+  &__text {
+    font-family: Onest, serif;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    border-radius: 64px;
+    padding-block: 0.9em;
+    white-space: nowrap;
+    color: white;
+
+    &--client {
+      background-color: #FF9217;
+      width: max-content;
+      position: absolute;
+      bottom: 3.9em;
+      padding-inline: 4.8em;
+      /* rotate: -9deg; */
+      transform-origin: 72% 100%;
+      transform: rotate(-13deg);
+    }
+
+    &--server {
+      background-color: #9FE11F;
+      width: max-content;
+      padding-inline: 1.6em;
+      transform: rotate(5deg);
+      transform-origin: 10% 100%;
+    }
+  }
+}
 
 
 
