@@ -102,8 +102,7 @@
     top: calc(50% - 2em);
 
     background: #333;
-
-    transform: translate(calc(cos(var(--angle)) * var(--radius)), calc(sin(var(--angle) * -1) * var(--radius))) rotate(calc(90deg - 1 * var(--angle)));
+    transform: translate(calc(cos(var(--angle) * 1) * var(--radius)), calc(sin(var(--angle) * -1) * var(--radius))) rotate(calc(90deg - 1 * var(--angle)));
 
     &--dot {
       background-color: #FF971B;
