@@ -39,6 +39,12 @@
     .how-work-item__descr {
       padding: 30px 20px;
     }
+    @media (max-width: 1024px) {
+      padding: 20px 20px 23px 20px;
+      .how-work-item__descr {
+        padding: 20px;
+      }
+    }
   }
 
   &.item2 {
@@ -75,6 +81,6 @@
     width: 100%;
     background-color: white;
     border-radius: 20px;
-    padding: 20px 20px;
+    padding: 20px;
   }
 }
