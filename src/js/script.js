@@ -25,6 +25,41 @@ const initFaq = () => {
     }))
 }
 
+const name = document.querySelector('input[name="name"]');
+if(name){
+    name.addEventListener('keyup', function() {
+        this.value = this.value.replace(/http|www|.ru|.com|[0-9]/g, '');
+    });
+}
+
+let eventCallback = function(e) {
+    let el = e.target,
+        clearVal = el.dataset.phoneClear,
+        pattern = el.dataset.phonePattern,
+        matrix_def = "+_(___) ___-__-__",
+        matrix = pattern ? pattern : matrix_def,
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = e.target.value.replace(/\D/g, "");
+    if (clearVal !== 'false' && e.type === 'blur') {
+        if (val.length < matrix.match(/([\_\d])/g).length) {
+            e.target.value = '';
+            return;
+        }
+    }
+    if (def.length >= val.length) val = def;
+    e.target.value = matrix.replace(/./g, function(a) {
+        return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+    });
+}
+let phone_inputs = document.querySelectorAll('input[name="phone"]');
+for (let elem of phone_inputs) {
+    for (let ev of ['input', 'blur', 'focus']) {
+        elem.addEventListener(ev, eventCallback);
+    }
+}
+
+
 new Swiper('#swiperPromo', {
     direction: 'horizontal',
     slidesPerView: 1,

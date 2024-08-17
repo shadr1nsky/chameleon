@@ -304,7 +304,56 @@
                 <h2 class="out-staff-table__title font-actay title font-xl">Аутстаффинг тестировщиков/QA</h2>
                 <img src="icons/title/lines.svg" width="34" height="70" alt="" class="title-icon title-icon--lines">
             </div>
-            <table class="out-staff-table">
+            <div class="out-staff-table">
+                <div class="out-staff-table-months">
+                    <div class="out-staff-table-empty"></div>
+                    <div class="out-staff-table-month" id="months3">До 3 месяцев</div>
+                    <div class="out-staff-table-month" id="months6">До 6 месяцев(-5%)</div>
+                </div>
+                <div class="out-staff-table-header">
+                    <div class="out-staff-table-header__level">Уровень</div>
+                    <div class="out-staff-table-header__hour">Час</div>
+                    <div class="out-staff-table-header__month">Месяц</div>
+                    <div class="out-staff-table-header__hour">Час</div>
+                    <div class="out-staff-table-header__month">Месяц</div>
+                </div>
+                <div class="out-staff-table-item">
+                    <div class="out-staff-table-item__level">Middle</div>
+                    <div class="out-staff-table-item__hour">1 600 ₽</div>
+                    <div class="out-staff-table-item__month">256 000 ₽</div>
+                    <div class="out-staff-table-item__hour">1 520 ₽</div>
+                    <div class="out-staff-table-item__month">243 000 ₽</div>
+                </div>
+                <div class="out-staff-table-item">
+                    <div class="out-staff-table-item__level">Senior</div>
+                    <div class="out-staff-table-item__hour">1 300 ₽</div>
+                    <div class="out-staff-table-item__month">208 000 ₽</div>
+                    <div class="out-staff-table-item__hour">1 235 ₽</div>
+                    <div class="out-staff-table-item__month">197 600 ₽</div>
+                </div>
+
+                <div class="out-staff-table-item hovered">
+                    <div class="out-staff-table-item__level">Junior</div>
+                    <div class="out-staff-table-item__hour">
+                        <div class="out-staff-table-item__hour_text">Час</div>
+                        <div class="out-staff-table-item__hour_num">800 ₽</div>
+
+                    </div>
+                    <div class="out-staff-table-item__month">
+                        <div class="out-staff-table-item__month_text">Месяц</div>
+                        <div class="out-staff-table-item__hour_num">120 000 ₽</div>
+                    </div>
+                </div>
+
+                <!--<div class="out-staff-table-item-hovered">
+                    <div class="out-staff-table-item">
+                        <div class="out-staff-table-item__level">Junior</div>
+                        <div class="out-staff-table-item__hour">800 ₽</div>
+                        <div class="out-staff-table-item__month">128 000 ₽</div>
+                    </div>
+                </div>-->
+            </div>
+            <table class="out-staff-table hidden">
                 <thead>
                 <tr class="out-staff-table__time empty">
                     <th></th>
@@ -340,6 +389,7 @@
                     <td colspan="5"></td>
                 </tr>
                 <tr class="out-staff-table__tr primary">
+
                     <td>Junior</td>
                     <td>
                         <p>Час</p>
@@ -790,23 +840,23 @@
                 <div class="feedback-forms">
                     <div class="feedback-form name">
                         <label for="name"></label>
-                        <input id="name" type="text" name="name" placeholder="Имя">
+                        <input id="name" name="name" placeholder="Имя">
                     </div>
                     <div class="feedback-form telegram">
                         <label for="telegram"></label>
-                        <input id="telegram" type="text" name="telegram" placeholder="Телеграм">
+                        <input id="telegram" name="telegram" placeholder="Телеграм">
                     </div>
                     <div class="feedback-form email">
                         <label for="email"></label>
                         <input id="email" type="email" name="email" placeholder="Email">
                     </div>
-                    <div class="feedback-form number">
-                        <label for="number"></label>
-                        <input id="number" type="number" name="number" placeholder="Телефон">
+                    <div class="feedback-form phone">
+                        <label for="phone"></label>
+                        <input id="phone" name="phone" placeholder="Телефон">
                     </div>
                     <div class="feedback-form company">
                         <label for="company"></label>
-                        <input id="company" type="text" name="company" placeholder="Компания">
+                        <input id="company" name="company" placeholder="Компания">
                     </div>
                     <div class="feedback-form description">
                         <label for="description"></label>
