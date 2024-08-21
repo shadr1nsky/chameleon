@@ -53,8 +53,11 @@
 }
 
 .footer-logo {
+  width: 175px;
+  height: 175px;
   img {
-    max-width: 140px;
+    width: 100%;
+    height: 100%;
   }
 }
 

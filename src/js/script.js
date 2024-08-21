@@ -66,8 +66,9 @@ new Swiper('#swiperPromo', {
     spaceBetween: 1000,
     loop: true,
     autoHeight: true,
+    speed: 1500,
     autoplay: {
-        delay: 2000,
+        delay: 3000,
     },
 });
 
@@ -77,9 +78,6 @@ new Swiper('#swiperCarousel', {
     spaceBetween: 56,
     loop: true,
     freeMode: true,
-    // autoplay: {
-    //     delay: 1000,
-    // },
 });
 
 new Swiper('#swiperClients', {

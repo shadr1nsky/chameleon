@@ -89,8 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 1000,
         autoHeight: true,
         loop: true,
+        speed: 1500,
         autoplay: {
-            delay: 2000,
+            delay: 3000,
         },
     });
 
