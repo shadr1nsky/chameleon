@@ -26,5 +26,13 @@
     "git": "^0.1.5",
     "node": "^18.20.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadr1nsky/chameleon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shadr1nsky/chameleon/issues"
+  },
+  "homepage": "https://github.com/shadr1nsky/chameleon#readme",
   "description": ""
 }
