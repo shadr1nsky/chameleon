@@ -14,9 +14,9 @@
     <div class="menu font-josephine">
         <div class="menu__wrapper">
             <div class="menu-top">
-                <div class="menu-logo">
-                    <img src="icons/logo.png" alt="">
-                </div>
+                <a href="/" class="menu-logo">
+                    <img src="icons/logo.svg" alt="">
+                </a>
             </div>
             <ul class="menu-items">
                 <li class="menu-item">
@@ -34,9 +34,9 @@
     </div>
     <nav class="nav font-josephine">
         <div class="nav__wrapper">
-            <div class="nav-logo">
-                <img src="icons/logo.png" alt="">
-            </div>
+            <a href="/" class="nav-logo">
+                <img src="icons/logo.svg" alt="">
+            </a>
             <div class="nav-menu">
                 <a class="nav-menu__link" href="index.html">Тестирование</a>
                 <a class="nav-menu__link" href="#out-staff-work">Аутстафф</a>
@@ -318,92 +318,39 @@
                     <div class="out-staff-table-header__month">Месяц</div>
                 </div>
                 <div class="out-staff-table-item">
-                    <div class="out-staff-table-item__level">Middle</div>
-                    <div class="out-staff-table-item__hour">1 600 ₽</div>
-                    <div class="out-staff-table-item__month">256 000 ₽</div>
-                    <div class="out-staff-table-item__hour">1 520 ₽</div>
-                    <div class="out-staff-table-item__month">243 000 ₽</div>
+                    <div class="out-staff-table-item__content">
+                        <div class="out-staff-table-item__level">Senior</div>
+                        <div class="out-staff-table-item__hour">1 600 ₽</div>
+                        <div class="out-staff-table-item__month">256 000 ₽</div>
+                        <div class="out-staff-table-item__hour">1 520 ₽</div>
+                        <div class="out-staff-table-item__month">243 000 ₽</div>
+                    </div>
                 </div>
                 <div class="out-staff-table-item">
-                    <div class="out-staff-table-item__level">Senior</div>
-                    <div class="out-staff-table-item__hour">1 300 ₽</div>
-                    <div class="out-staff-table-item__month">208 000 ₽</div>
-                    <div class="out-staff-table-item__hour">1 235 ₽</div>
-                    <div class="out-staff-table-item__month">197 600 ₽</div>
-                </div>
-
-                <div class="out-staff-table-item hovered">
-                    <div class="out-staff-table-item__level">Junior</div>
-                    <div class="out-staff-table-item__hour">
-                        <div class="out-staff-table-item__hour_text">Час</div>
-                        <div class="out-staff-table-item__hour_num">800 ₽</div>
-
-                    </div>
-                    <div class="out-staff-table-item__month">
-                        <div class="out-staff-table-item__month_text">Месяц</div>
-                        <div class="out-staff-table-item__hour_num">120 000 ₽</div>
+                    <div class="out-staff-table-item__content">
+                        <div class="out-staff-table-item__level">Middle</div>
+                        <div class="out-staff-table-item__hour">1 300 ₽</div>
+                        <div class="out-staff-table-item__month">208 000 ₽</div>
+                        <div class="out-staff-table-item__hour">1 235 ₽</div>
+                        <div class="out-staff-table-item__month">197 600 ₽</div>
                     </div>
                 </div>
 
-                <!--<div class="out-staff-table-item-hovered">
-                    <div class="out-staff-table-item">
+                <div class="out-staff-table-item junior">
+                    <div class="out-staff-table-item__content">
                         <div class="out-staff-table-item__level">Junior</div>
-                        <div class="out-staff-table-item__hour">800 ₽</div>
-                        <div class="out-staff-table-item__month">128 000 ₽</div>
-                    </div>
-                </div>-->
-            </div>
-            <table class="out-staff-table hidden">
-                <thead>
-                <tr class="out-staff-table__time empty">
-                    <th></th>
-                    <th colspan="2">До 3 месяцев</th>
-                    <th colspan="2">До 6 месяцев (-5%)</th>
-                </tr>
-                <tr class="out-staff-table__head">
-                    <th>Уровень</th>
-                    <th>Час</th>
-                    <th>Месяц</th>
-                    <th>Час</th>
-                    <th>Месяц</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="out-staff-table__tr">
-                    <td>Middle</td>
-                    <td>1 600 ₽</td>
-                    <td>256 000 ₽</td>
-                    <td>1 520 ₽</td>
-                    <td>243 000 ₽</td>
-                </tr>
-                <tr class="out-staff-table__tr">
-                    <td>Senior</td>
-                    <td>1 300 ₽</td>
-                    <td>208 000 ₽</td>
-                    <td>1 235 ₽</td>
-                    <td>197 600 ₽</td>
-                </tr>
-                </tbody>
-                <tfoot>
-                <tr class="out-staff-table__tr empty">
-                    <td colspan="5"></td>
-                </tr>
-                <tr class="out-staff-table__tr primary">
+                        <div class="out-staff-table-item__hour">
+                            <div class="out-staff-table-item__hour_text">Час</div>
+                            <div class="out-staff-table-item__hour_num">800 ₽</div>
 
-                    <td>Junior</td>
-                    <td>
-                        <p>Час</p>
-                        800р
-                    </td>
-                    <td>
-                        <p>Месяц</p>
-                        128 000 ₽
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                </tfoot>
-            </table>
+                        </div>
+                        <div class="out-staff-table-item__month">
+                            <div class="out-staff-table-item__month_text">Месяц</div>
+                            <div class="out-staff-table-item__hour_num">120 000 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="clients" class="section clients">
             <div class="section__head">
@@ -889,9 +836,9 @@
     <div class="section footer__wrapper">
         <div class="footer__top">
             <div class="footer__left">
-                <div class="footer-logo">
-                    <img src="icons/logo.png" alt="">
-                </div>
+                <a href="/" class="footer-logo">
+                    <img src="icons/logo.svg" alt="">
+                </a>
             </div>
             <div class="footer__middle">
                 <div class="footer-mid">
