@@ -59,6 +59,23 @@ for (let elem of phone_inputs) {
     }
 }
 
+let inputs = document.querySelectorAll('#feedback-button__input');
+Array.prototype.forEach.call(inputs, function (input) {
+    let label = input.nextElementSibling,
+        labelVal = label.querySelector('.feedback-button__text').innerText;
+
+    input.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+            countFiles = this.files.length;
+
+        if (countFiles)
+            label.querySelector('.feedback-button__text').innerText = 'Выбрано файлов: ' + countFiles;
+        else
+            label.querySelector('.feedback-button__text').innerText = labelVal;
+    });
+});
+
 
 new Swiper('#swiperPromo', {
     direction: 'horizontal',
