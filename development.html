@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chameleon</title>
+    <meta name="title" content="Chameleon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/development.style.min.css">
+</head>
+<body>
+<header>
+    <div class="menu font-josephine">
+        <div class="menu__wrapper">
+            <div class="menu-top">
+                <a href="/" class="menu-logo">
+                    <img src="icons/logo.svg" alt="">
+                </a>
+            </div>
+            <ul class="menu-items">
+                <li class="menu-item">
+                    <a class="menu-item__link" href="index.html">Тестирование</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link" href="index.html#out-staff-work">Аутстафф</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link current" href="development.html">Разработка</a>
+                </li>
+            </ul>
+            <div class="button-feedback">Связаться с нами</div>
+        </div>
+    </div>
+    <nav class="nav font-josephine">
+        <div class="nav__wrapper">
+            <a href="/development.html" class="nav-logo">
+                <img src="icons/logo.svg" alt="">
+            </a>
+            <div class="nav-menu">
+                <a class="nav-menu__link" href="index.html">Тестирование</a>
+                <a class="nav-menu__link" href="index.html#out-staff-work">Аутстафф</a>
+                <a class="nav-menu__link current" href="development.html">Разработка</a>
+            </div>
+            <a class="nav-button button-feedback" href="#feedback">Связаться с нами</a>
+        </div>
+    </nav>
+    <div class="hamburger">
+        <svg viewbox="0 0 60 40">
+            <g stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path id="top-line" d="M10,10 L50,10 Z"></path>
+                <path id="middle-line" d="M10,20 L50,20 Z"></path>
+                <path id="bottom-line" d="M10,30 L50,30 Z"></path>
+            </g>
+        </svg>
+    </div>
+</header>
+<main>
+    <section class="section--wide promo">
+        <div class="promo__wrapper">
+            <div class="promo-title swiperPromo" id="swiperPromo">
+                Мы умеем
+                <div class="promo-title__wrapper swiper-wrapper">
+                    <h1 class="promo-title-item swiper-slide">Разрабатывать корпоративные сайты</h1>
+                    <h1 class="promo-title-item swiper-slide">Создавать интернет-магазины</h1>
+                    <h1 class="promo-title-item swiper-slide">Интегрироваться с платежными системами</h1>
+                    <h1 class="promo-title-item swiper-slide">Внедрять системы управления контентом (CMS)</h1>
+                    <h1 class="promo-title-item swiper-slide">Разрабатывать Парсеры данных</h1>
+                    <h1 class="promo-title-item swiper-slide">Создавать скрипты и инструменты для автоматизации работы с
+                        данными</h1>
+                    <h1 class="promo-title-item swiper-slide">Обслуживать и поддерживать приложения</h1>
+                </div>
+                Любой сложности
+            </div>
+
+            <a class="promo-scroll font-poppins active" href="#services">
+                <img class="promo-scroll__mouse" src="icons/promo/mouse.svg" alt="">
+                <div class="promo-scroll__text">Скролль вниз</div>
+                <img class="promo-scroll__arrow" src="icons/promo/arrow.svg" alt="">
+            </a>
+        </div>
+    </section>
+    <div class="sections">
+        <section class="section services font-josephine" id="services">
+            <div class="section__head">
+                <h2 class="title font-actay font-xl">Услуги</h2>
+                <img src="icons/title/code.svg" alt="" class="title-icon title-icon--code">
+            </div>
+            <ul class="services-list font-josephine" data-services-list>
+                <li class="services-list__item services-item" data-services-item>
+                    <div class="services-item__content">
+                        <p class="services-item__text">
+                            Создание удобного и функционального веб-сайта для вашего бизнеса.
+                        </p>
+                        <p class="services-item__description" data-service-description>
+                            Мы предлагаем профессиональное развитие сайтов с разработкой и оптимизацией поисковых
+                            систем.
+                        </p>
+                    </div>
+                </li>
+                <li class="services-list__item services-item" data-services-item>
+                    <div class="services-item__content">
+                        <p class="services-item__text">
+                            Разработка мобильных приложений для iOS и Android
+                        </p>
+                        <p class="services-item__description" data-service-description>
+                            Мы создаем инновационные мобильные приложения, которые помогают вам привлекать новых
+                            клиентов и
+                            улучшать взаимодействие с существующими.
+                        </p>
+                    </div>
+                </li>
+                <li class="services-list__item services-item" data-services-item>
+                    <div class="services-item__content">
+                        <p class="services-item__text">
+                            Интеграция CRM и ERP систем.
+                        </p>
+                        <p class="services-item__description" data-service-description>
+                            Мы предлагаем создание индивидуальных CRM и ERP-систем, а также интеграцию с уже
+                            существующими
+                            программами, чтобы улучшить процессы управления вашим бизнесом.
+                        </p>
+                    </div>
+                </li>
+                <li class="services-list__item services-item" data-services-item>
+                    <div class="services-item__content">
+                        <p class="services-item__text">
+                            Разработка специализированного программного обеспечения.
+                        </p>
+                        <p class="services-item__description" data-service-description>
+                            Мы создаем уникальное ПО, которое отвечает вашим потребностям и решает конкретные задачи
+                            вашего бизнеса.
+                        </p>
+                    </div>
+                </li>
+                <li class="services-list__item services-item" data-services-item>
+                    <div class="services-item__content">
+                        <p class="services-item__text">
+                            Аудит и оптимизация веб-сайтов.
+                        </p>
+                        <p class="services-item__description" data-service-description>
+                            Мы проводим полный анализ вашего сайта, выявляем проблемные места и предлагаем оптимизацию
+                            для улучшения позиций в поисковых компонентах.
+                        </p>
+                    </div>
+                </li>
+                <li class="services-list__item services-item" data-services-item>
+                    <div class="services-item__content">
+                        <p class="services-item__text">
+                            Разработка кроссплатформенного программного обеспечения для
+                            повышения эффективности работы вашей компании.
+                        </p>
+                    </div>
+                </li>
+                <li class="services-list__item services-item" data-services-item>
+                    <div class="services-item__content">
+                        <p class="services-item__text">
+                            Разработка уникального лендинга для проведения маркетинговых
+                            кампаний и увеличения конверсии.
+                        </p>
+                    </div>
+                </li>
+                <li class="services-list__item services-item" data-services-item>
+                    <div class="services-item__content">
+                        <p class="services-item__text">
+                            Создание единого портала для внутреннего обмена информацией и
+                            управления бизнес-процессами.
+                        </p>
+                    </div>
+                </li>
+                <li class="services-list__item services-item" data-services-item>
+                    <div class="services-item__content">
+                        <p class="services-item__text">
+                            Установка системы аналитики для идентификации пользователей и
+                            принятия обоснованных решений на сайте или ПО.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="section work-steps">
+            <div class="section__head">
+                <h2 class="title font-xl font-actay">Этапы работы</h2>
+                <img src="icons/title/lines.svg" alt="" class="title-icon title-icon--lines">
+            </div>
+
+            <div class="work-steps__wrapper font-josephine">
+                <div class="work-steps__items">
+                    <div class="work-steps-item item1">
+                        <div class="work-steps-item__title">
+                            <div class="work-steps-item__number font-actay">01</div>
+                            <h3 class="work-steps-item__text">Планирование и анализ требований</h3>
+                        </div>
+                        <div class="work-steps-item__descr">Определение целей проекта, его функциональности и основных
+                            требований.
+                        </div>
+                    </div>
+
+                    <div class="work-steps-item item2">
+                        <div class="work-steps-item__title">
+                            <div class="work-steps-item__number font-actay">02</div>
+                            <h3 class="work-steps-item__text">Проектирование</h3>
+                        </div>
+                        <div class="work-steps-item__descr">Создание структуры программного продукта, выбор технологий и
+                            инструментов.
+                        </div>
+                    </div>
+
+                    <div class="work-steps-item item3">
+                        <div class="work-steps-item__title">
+                            <div class="work-steps-item__number font-actay">03</div>
+                            <h3 class="work-steps-item__text">Разработка</h3>
+                        </div>
+                        <div class="work-steps-item__descr">Написание кода, реализация функциональности и
+                            тестирование.
+                        </div>
+                    </div>
+
+                    <div class="work-steps-item item4">
+                        <div class="work-steps-item__title">
+                            <div class="work-steps-item__number font-actay">04</div>
+                            <h3 class="work-steps-item__text">Тестирование и отладка</h3>
+                        </div>
+                        <div class="work-steps-item__descr">Проверка работоспособности программы, исправление ошибок и
+                            устранение неполадок.
+                        </div>
+                    </div>
+
+                    <div class="work-steps-item item5">
+                        <div class="work-steps-item__title">
+                            <div class="work-steps-item__number font-actay">05</div>
+                            <h3 class="work-steps-item__text">Внедрение и поддержка</h3>
+                        </div>
+                        <div class="work-steps-item__descr">Запуск программного продукта, обучение пользователей,
+                            поддержка и обновление.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section technology">
+            <div class="technology__container">
+                <div class="section__head">
+                    <h2 class="title font-actay font-xl">Технологии</h2>
+                    <img class="title-icon title-icon--lines" src="icons/title/lines.svg" alt="">
+                </div>
+                <div class="system">
+                    <div class="system__center system-center">
+                        <div class="system-center__text system-center__text--server">Разработка серверной части ПО</div>
+                        <div class="system-center__circle system-center__circle--outline"></div>
+                        <div class="system-center__text system-center__text--client">Разработка интерфейса ПО</div>
+                        <div class="system-center__circle system-center__circle--fill"></div>
+                    </div>
+                    <div class="system__orbits">
+                        <div class="system__orbit system__orbit--big">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/python.svg" alt="java"
+                                 class="system__icon system__icon--python">
+                            <img src="icons/technology/nodejs.svg" alt="java"
+                                 class="system__icon system__icon--nodejs">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/java.svg" alt="java" class="system__icon system__icon--java">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/php.svg" alt="java" class="system__icon system__icon--php">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/ts.svg" alt="java" class="system__icon system__icon--ts">
+                            <img src="icons/technology/react.svg" alt="java" class="system__icon system__icon--react">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/js.svg" alt="java" class="system__icon system__icon--js">
+                            <img src="icons/technology/vue.svg" alt="java" class="system__icon system__icon--vue">
+                        </div>
+                        <div class="system__orbit system__orbit--small">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/python.svg" alt="java"
+                                 class="system__icon system__icon--python">
+                            <img src="icons/technology/nodejs.svg" alt="java"
+                                 class="system__icon system__icon--nodejs">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/java.svg" alt="java" class="system__icon system__icon--java">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/php.svg" alt="java" class="system__icon system__icon--php">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/ts.svg" alt="java" class="system__icon system__icon--ts">
+                            <img src="icons/technology/react.svg" alt="java" class="system__icon system__icon--react">
+                            <div class="system__icon system__icon--dot"></div>
+                            <img src="icons/technology/js.svg" alt="java" class="system__icon system__icon--js">
+                            <img src="icons/technology/vue.svg" alt="java" class="system__icon system__icon--vue">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="hidden section portfolio font-josephine">
+            <div class="portfolio__wrapper">
+                <div class="section__head">
+                    <h2 class="title font-xl font-actay">Портфолио</h2>
+                    <img src="icons/title/lines.svg" alt="" class="title-icon--lines">
+                </div>
+                <div class="portfolio-watermark">Портфолио</div>
+                <div class="portfolio-swiper swiperPortfolio" id="swiperPortfolio">
+                    <div class="portfolio-swiper__wrapper swiper-wrapper">
+                        <div class="portfolio-swiper-slide swiper-slide">
+                            <img src="images/portfolio/project1.png" alt="" class="portfolio-swiper-slide__image">
+                            <div class="portfolio-swiper-slide__name">Проект №1</div>
+                        </div>
+
+                        <div class="portfolio-swiper-slide swiper-slide">
+                            <img src="images/portfolio/project1.png" alt="" class="portfolio-swiper-slide__image">
+                            <div class="portfolio-swiper-slide__name">Проект №2</div>
+                        </div>
+
+                        <div class="portfolio-swiper-slide swiper-slide">
+                            <img src="images/portfolio/project2.png" alt="" class="portfolio-swiper-slide__image">
+                            <div class="portfolio-swiper-slide__name">Проект №3</div>
+                        </div>
+
+                        <div class="portfolio-swiper-slide swiper-slide">
+                            <img src="images/portfolio/project3.png" alt="" class="portfolio-swiper-slide__image">
+                            <div class="portfolio-swiper-slide__name">Проект №4</div>
+                        </div>
+
+                        <div class="portfolio-swiper-slide swiper-slide">
+                            <img src="images/portfolio/project3.png" alt="" class="portfolio-swiper-slide__image">
+                            <div class="portfolio-swiper-slide__name">Проект №5</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-swiper__nav">
+                        <div class="portfolio-swiper__nav_button-prev swiper-button-prev">
+                            <svg width="16.004028" height="13.321289" viewBox="0 0 16.004 13.3213" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path id="Arrow Prev"
+                                      d="M3.41 5.66L7.36 1.71C7.76 1.31 7.76 0.69 7.36 0.29C6.97 -0.1 6.34 -0.1 5.95 0.29L0.29 5.95C-0.1 6.34 -0.1 6.97 0.29 7.36L5.95 13.02C6.34 13.42 6.97 13.42 7.36 13.02C7.76 12.62 7.76 12 7.36 11.61L3.41 7.66L15 7.66C15.56 7.66 16 7.22 16 6.66C16 6.1 15.56 5.66 15 5.66L3.41 5.66Z"
+                                      fill="#191B20" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="portfolio-swiper__nav_button-next swiper-button-next">
+                            <svg width="16.004028" height="13.321289" viewBox="0 0 16.004 13.3213" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path id="Arrow Next"
+                                      d="M12.58 5.66L8.63 1.71C8.24 1.31 8.24 0.69 8.63 0.29C9.03 -0.1 9.65 -0.1 10.05 0.29L15.7 5.95C16.1 6.34 16.1 6.97 15.7 7.36L10.05 13.02C9.65 13.42 9.03 13.42 8.63 13.02C8.24 12.62 8.24 12 8.63 11.61L12.58 7.66L1 7.66C0.43 7.66 0 7.22 0 6.66C0 6.1 0.43 5.66 1 5.66L12.58 5.66Z"
+                                      fill="#191B20" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section parsing font-josephine">
+            <div class="section__head">
+                <h2 class="title font-xl font-actay">Парсинг услуги</h2>
+                <img src="icons/title/code.svg" alt="" class="title-icon--code">
+            </div>
+            <div class="parsing__wrapper">
+                <div class="parsing-swiper swiperParsing" id="swiperParsing">
+                    <div class="parsing-swiper-pagination swiper-pagination"></div>
+
+                    <div class="parsing-swiper__wrapper swiper-wrapper">
+                        <div class="parsing-swiper-slide swiper-slide">
+                            <div class="parsing-swiper-slide__text">
+                                <div class="parsing-swiper-slide__title">Написание специального парсера данных для сбора
+                                    информации с веб-сайтов.
+                                </div>
+                                <div class="parsing-swiper-slide__descr">Мы разработаем и настроим индивидуальный
+                                    парсер, который будет собирать нужные данные с различных источников и представлять
+                                    их в удобном формате.
+                                </div>
+                            </div>
+                            <div class="parsing-swiper-slide__image">
+                                <img src="icons/parsing/icon1.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="parsing-swiper-slide swiper-slide">
+                            <div class="parsing-swiper-slide__text">
+                                <div class="parsing-swiper-slide__title">Разработка приложения для парсинга данных.
+                                </div>
+                                <div class="parsing-swiper-slide__descr">Наша команда программистов создаст уникальное
+                                    приложение, которое будет отвечать вашим требованиям и позволит вам эффективно
+                                    собирать информацию.
+                                </div>
+                            </div>
+                            <div class="parsing-swiper-slide__image">
+                                <img src="icons/parsing/icon2.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="parsing-swiper-slide swiper-slide">
+                            <div class="parsing-swiper-slide__text">
+                                <div class="parsing-swiper-slide__title">Интеграция существующего парсера данных в ваше
+                                    программное обеспечение.
+                                </div>
+                            </div>
+                            <div class="parsing-swiper-slide__image">
+                                <img src="icons/parsing/icon3.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="parsing-swiper-slide swiper-slide">
+                            <div class="parsing-swiper-slide__text">
+                                <div class="parsing-swiper-slide__title">Обучение сотрудников работе с парсером
+                                    данных.
+                                </div>
+                                <div class="parsing-swiper-slide__descr">Наша команда проведет обучающий курс для вашего
+                                    персонала по использованию нового парсера данных, чтобы обеспечить эффективное
+                                    использование этого инструмента.
+                                </div>
+                            </div>
+                            <div class="parsing-swiper-slide__image">
+                                <img src="icons/parsing/icon4.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="parsing-swiper-slide swiper-slide">
+                            <div class="parsing-swiper-slide__text">
+                                <div class="parsing-swiper-slide__title">Техническая поддержка и обновление парсера
+                                    данных.
+                                </div>
+                                <div class="parsing-swiper-slide__descr">Мы гарантируем полную техническую поддержку и
+                                    обновление вашего парсера данных, чтобы он всегда был актуален и работал без сбоев.
+                                </div>
+                            </div>
+                            <div class="parsing-swiper-slide__image">
+                                <img src="icons/parsing/icon5.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section targets font-josephine">
+            <div class="section__head">
+                <h2 class="title font-xl font-actay">Основные цели ожидания парсинг приложения:</h2>
+                <img src="icons/title/lines.svg" alt="" class="title-icon title-icon--lines">
+            </div>
+            <div class="targets__wrapper">
+                <div class="targets__items">
+                    <div class="targets-item item1">
+                        <h2 class="targets-item__title font-md">Изучение рынка</h2>
+                        <h3 class="targets-item__descr font-xs">Анализ позволяет собирать информацию о продуктах,
+                            услугах, ценах и маркетинговых акциях, что позволяет понять текущее положение рынка
+                            и понять его динамику.</h3>
+                    </div>
+                    <div class="targets-item item2">
+                        <h2 class="targets-item__title font-md">Выявление трендов</h2>
+                        <h3 class="targets-item__descr font-xs">Анализ конкурентности позволяет определить актуальные
+                            тенденции и изменения в отрасли, что помогает компании адаптировать свой кризис и
+                            быть более конкурентоспособной.</h3>
+                    </div>
+                    <div class="targets-item item3">
+                        <h2 class="targets-item__title font-md">Определение сильных и слабых сторон</h2>
+                        <h3 class="targets-item__descr font-xs">Исследование помогает выявить сильные и слабые стороны
+                            своего бизнеса, что помогает усилить и укрепить свои позиции на рынке.</h3>
+                    </div>
+                    <div class="targets-item item4">
+                        <h2 class="targets-item__title font-md">Создание уникального предложения</h2>
+                        <h3 class="targets-item__descr font-xs">Анализ сравнения Позволяет выявить пробелы на рынке и
+                            спросе на новые продукты и услуги, что помогает компании создать уникальное
+                            предложение и использовать алгоритм сравнения.</h3>
+                    </div>
+                    <div class="targets-item item5">
+                        <h2 class="targets-item__title font-md">При принятии стратегических решений</h2>
+                        <h3 class="targets-item__descr font-xs">На основе данных, результатов анализа и анализа,
+                            компания может обоснованные стратегические решения, например, о внедрении новых
+                            продуктов, внедрении цен или развитии новых рынков.</h3>
+                    </div>
+                    <div class="targets-item item6">
+                        <h3 class="targets-item__descr font-xs">Таким образом, анализ и анализ являются необходимыми
+                            инструментами для бизнеса, помогая компаниям быть в курсе текущей ситуации на рынке,
+                            определять конкурентные преимущества и принимать обоснованные стратегические
+                            решения.</h3>
+                    </div>
+                </div>
+                <img class="targets__img" src="images/targets/S.svg" alt="">
+            </div>
+        </section>
+        <section id="faq" class="section faq">
+            <div class="section__head faq__head">
+                <h2 class="title font-xl font-actay">Часто задаваемые вопросы</h2>
+                <img src="icons/title/code.svg" width="76" height="45" alt="" class="title-icon title-icon--code">
+            </div>
+            <div class="faq__list font-onest">
+                <div class="faq__list_left">
+                    <div class="faq-item">
+                        <div class="faq-item__button">
+                            <span>Что такое веб-разработка?</span>
+                            <div class="faq-item__icon">
+                            <span class="faq-item__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM1 9H15V7H1V9Z"/>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>
+                                Веб-разработка — это процесс создания и поддержки сайтов в Интернете. Она включает в себя
+                                работу по созданию, программированию, контенту и оптимизации сайта для лучшего
+                                пользовательского опыта.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__button">
+                            <span>Как мы можем помочь с веб-разработкой?</span>
+                            <div class="faq-item__icon">
+                            <span class="faq-item__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM1 9H15V7H1V9Z"/>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>
+                                Мы предлагаем полный спектр услуг по веб-разработке, создание включая уникальный дизайн,
+                                программирование функциональности сайта, оптимизацию для поисковых систем, разработку
+                                мобильной версии и многое другое.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__button">
+                            <span>Что такое парсинг данных?</span>
+                            <div class="faq-item__icon">
+                            <span class="faq-item__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM1 9H15V7H1V9Z"/>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>
+                                Парсинг данных — это процесс извлечения информации с веб-сайтов с целью анализа или
+                                использования в других приложениях. Это может быть корректным процессом с использованием
+                                специальных программ, называемых парсерами.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__button">
+                            <span>Какой парсер подходит для моих задач?</span>
+                            <div class="faq-item__icon">
+                            <span class="faq-item__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM1 9H15V7H1V9Z"/>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>
+                                Выбор парсера зависит от вашего желания. Наши специалисты помогут вам определить наилучший
+                                вариант и создадут уникальное решение по вашему запросу.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__list_right">
+                    <div class="faq-item">
+                        <div class="faq-item__button">
+                            <span>Сколько времени занимает разработка сайта или парсера?</span>
+                            <div class="faq-item__icon">
+                            <span class="faq-item__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM1 9H15V7H1V9Z"/>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>
+                                Время разработки зависит от сложности проекта, объема работ и других факторов. Мы всегда
+                                следим за выполнением работ вовремя и соблюдаем все ваши требования.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__button">
+                            <span>Каковы гарантии того, что вы создадите качественный продукт?</span>
+                            <div class="faq-item__icon">
+                            <span class="faq-item__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM1 9H15V7H1V9Z"/>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>
+                                Мы имеем большой опыт работы в сфере веб-разработки и анализа данных, что позволяет нам
+                                предоставлять качественные услуги. Мы также обеспечиваем поддержку и дальнейшее развитие
+                                вашего проекта после его запуска.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__button">
+                            <span>Что делать, если у меня возникли дополнительные вопросы или проблемы?</span>
+                            <div class="faq-item__icon">
+                            <span class="faq-item__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM1 9H15V7H1V9Z"/>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>
+                                Вы можете связаться с нами любым удобным способом — по телефону, через электронную почту или
+                                через форму обратной связи на нашем сайте. Наши специалисты всегда готовы помочь вам и
+                                решить любые возникшие вопросы.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="section feedback pb90 font-onest" id="feedback">
+        <div class="section__head">
+            <h2 class="title font-xl font-actay">Связаться с нами</h2>
+            <img src="icons/title/lines.svg" width="34" height="70" alt="" class="title-icon title-icon--lines">
+        </div>
+
+        <div class="feedback__wrapper">
+            <div class="feedback__content">
+                <div class="feedback-forms">
+                    <form class="feedback-form name">
+                        <label for="name"></label>
+                        <input id="name" name="name" placeholder="Имя">
+                    </form>
+                    <form class="feedback-form telegram">
+                        <label for="telegram"></label>
+                        <input id="telegram" name="telegram" placeholder="Телеграм">
+                    </form>
+                    <form class="feedback-form email">
+                        <label for="email"></label>
+                        <input id="email" type="email" name="email" placeholder="Email">
+                    </form>
+                    <form class="feedback-form phone">
+                        <label for="phone"></label>
+                        <input id="phone" name="phone" placeholder="Телефон">
+                    </form>
+                    <form class="feedback-form company">
+                        <label for="company"></label>
+                        <input id="company" name="company" placeholder="Компания">
+                    </form>
+                    <form class="feedback-form description">
+                        <label for="description"></label>
+                        <textarea id="description" name="description" placeholder="Описание задачи"></textarea>
+                    </form>
+                </div>
+                <div class="feedback-button">
+                    <input id="feedback-button__input" type="file" multiple></input>
+                    <label for="feedback-button__input">
+                        <span id="feedback-button__text" class="feedback-button__text">Прикрепить файл</span>
+                    </label>
+                </div>
+            </div>
+            <div class="feedback-send">
+                <button type="submit" class="feedback-send-button">
+                    Отправить
+                    <span class="feedback-send-button__arrow">
+                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM1 9H19V7H1V9Z"
+                                  fill="#191B20"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="feedback-send-agree">
+                    Нажимая на кнопку вы даете <a href="">согласие на обработку персональных данных</a> и
+                    соглашаетесь
+                    <a href="">с политикой конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="section--wide footer ">
+    <div class="section footer__wrapper">
+        <div class="footer__top">
+            <div class="footer__left">
+                <a href="/development.html" class="footer-logo">
+                    <img src="icons/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__middle">
+                <div class="footer-mid">
+                    <div class="footer-mid-menu">
+                        <a class="footer-mid-menu__link" href="index.html">Тестирование</a>
+                        <a class="footer-mid-menu__link" href="index.html#out-staff-work">Аутстафф</a>
+                        <a class="footer-mid-menu__link" href="development.html">Разработка</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__right">
+                <a href="" class="button-feedback">Связаться с нами</a>
+            </div>
+        </div>
+        <div class="footer-mid-company">Компания CHAMELEON 2024 год.</div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/development.script.js"></script>
+</body>
+</html>
