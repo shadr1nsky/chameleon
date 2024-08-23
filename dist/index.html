@@ -397,15 +397,6 @@
                                 <div class="clients-item__number">04</div>
                             </div>
                         </div>
-                        <div class="clients-item swiper-slide">
-                            <div class="clients-item__icon">
-                                <img src="images/clients/VTB.svg" alt="">
-                            </div>
-                            <div class="clients-item__bottom">
-                                <div class="clients-item__name">Blanc</div>
-                                <div class="clients-item__number">05</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -449,7 +440,7 @@
                 </li>
             </ul>
         </section>
-        <section id="reviews" class="section reviews font-onest">
+        <section id="hidden reviews" class="section reviews font-onest">
             <div class="section__head">
                 <h2 class="title font-xl font-actay">Отзывы</h2>
                 <img class="title-icon title-icon--lines" src="icons/title/lines.svg" width="34" height="70" alt="">
@@ -776,7 +767,7 @@
             </div>
         </section>
     </div>
-    <section class="section feedback font-onest" id="feedback">
+    <section class="section feedback pb90 font-onest" id="feedback">
         <div class="section__head">
             <h2 class="title font-xl font-actay">Связаться с нами</h2>
             <img src="icons/title/lines.svg" width="34" height="70" alt="" class="title-icon title-icon--lines">
@@ -785,44 +776,49 @@
         <div class="feedback__wrapper">
             <div class="feedback__content">
                 <div class="feedback-forms">
-                    <div class="feedback-form name">
+                    <form class="feedback-form name">
                         <label for="name"></label>
                         <input id="name" name="name" placeholder="Имя">
-                    </div>
-                    <div class="feedback-form telegram">
+                    </form>
+                    <form class="feedback-form telegram">
                         <label for="telegram"></label>
                         <input id="telegram" name="telegram" placeholder="Телеграм">
-                    </div>
-                    <div class="feedback-form email">
+                    </form>
+                    <form class="feedback-form email">
                         <label for="email"></label>
                         <input id="email" type="email" name="email" placeholder="Email">
-                    </div>
-                    <div class="feedback-form phone">
+                    </form>
+                    <form class="feedback-form phone">
                         <label for="phone"></label>
                         <input id="phone" name="phone" placeholder="Телефон">
-                    </div>
-                    <div class="feedback-form company">
+                    </form>
+                    <form class="feedback-form company">
                         <label for="company"></label>
                         <input id="company" name="company" placeholder="Компания">
-                    </div>
-                    <div class="feedback-form description">
+                    </form>
+                    <form class="feedback-form description">
                         <label for="description"></label>
                         <textarea id="description" name="description" placeholder="Описание задачи"></textarea>
-                    </div>
+                    </form>
                 </div>
-                <button type="submit" class="feedback-button">Прикрепить файл</button>
+                <div class="feedback-button">
+                    <input id="feedback-button__input" type="file" multiple></input>
+                    <label for="feedback-button__input">
+                        <span id="feedback-button__text" class="feedback-button__text">Прикрепить файл</span>
+                    </label>
+                </div>
             </div>
             <div class="feedback-send">
-                <a href="" class="feedback-send-button">
-                    <div class="feedback-send-button__text">Отправить</div>
-                    <div class="feedback-send-button__arrow">
+                <button type="submit" class="feedback-send-button">
+                    Отправить
+                    <span class="feedback-send-button__arrow">
                         <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM1 9H19V7H1V9Z"
                                   fill="#191B20"/>
                         </svg>
-                    </div>
-                </a>
+                    </span>
+                </button>
                 <div class="feedback-send-agree">
                     Нажимая на кнопку вы даете <a href="">согласие на обработку персональных данных</a> и
                     соглашаетесь
