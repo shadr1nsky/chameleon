@@ -1,10 +1,11 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 .nav {
   position: relative;
-  @media (max-width: 576px) {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
   &__wrapper {
     position: absolute;
     display: flex;
@@ -12,7 +13,8 @@
     gap: 45px;
     width: 100%;
     padding-inline: 60px 80px;
-    z-index: 1;
+    z-index: 10;
+    background-color: #FFFFFF;
     @media (max-width: 768px) {
       padding-inline: 30px;
     }
