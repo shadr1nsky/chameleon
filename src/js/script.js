@@ -108,14 +108,28 @@ new Swiper('#swiperReviews', {
     }
 });
 
-const hamburger = document.querySelector('.hamburger'),
-    menu = document.querySelector('.menu')
-html = document.querySelector('html')
+const hamburgerEl = document.querySelector('.hamburger'),
+    menuEl = document.querySelector('.menu'),
+    menuOutEl = document.querySelector('.menu-item.out'),
+    menuButtonEl = document.querySelector('.menu-button'),
+    body = document.querySelector('html')
 
-hamburger.onclick = function () {
-    menu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-    html.classList.toggle('unscroll')
+hamburgerEl.onclick = function () {
+    menuEl.classList.toggle('active');
+    hamburgerEl.classList.toggle('active');
+    body.classList.toggle('unscroll')
+}
+
+menuOutEl.onclick = function () {
+    menuEl.classList.remove('active');
+    hamburgerEl.classList.remove('active');
+    body.classList.remove('unscroll')
+}
+
+menuButtonEl.onclick = function () {
+    menuEl.classList.remove('active');
+    hamburgerEl.classList.remove('active');
+    body.classList.remove('unscroll')
 }
 
 document.addEventListener('DOMContentLoaded', () => {
