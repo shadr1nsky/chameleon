@@ -83,6 +83,56 @@ menuButtonEl.onclick = function () {
     body.classList.remove('unscroll')
 }
 
+document.getElementById('feedback-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Отмена стандартного отправления формы
+
+    var formData = new FormData();
+
+    // Проверка и добавление только заполненных полей
+    var inputs = ['name', 'telegram', 'email', 'phone', 'company', 'description'];
+    inputs.forEach(function(input) {
+        var inputElement = document.getElementById(input);
+        if (inputElement && inputElement.value.trim() !== '') {
+            formData.append(input, inputElement.value.trim());
+        }
+    });
+
+    // Проверка типов файлов
+    var fileInput = document.getElementById('feedback-button__input');
+    var validTypes = ['text/plain', 'application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+    for (var i = 0; i < fileInput.files.length; i++) {
+        if (validTypes.includes(fileInput.files[i].type)) {
+            formData.append('file', fileInput.files[i]);
+        } else {
+            alert('Допустимые типы файлов: txt, pdf, doc, docx');
+            return; // Прекращаем отправку формы, если тип файла недопустимый
+        }
+    }
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'send_form.php', true);
+
+    xhr.onload = function() {
+        var messageElement = document.getElementById('form-message');
+        if (xhr.status === 200) {
+            messageElement.textContent = 'Сообщение успешно отправлено!';
+            messageElement.className = 'success active';
+            document.getElementById('feedback-form').reset(); // Очистка формы после успешной отправки
+        } else {
+            messageElement.textContent = 'Ошибка при отправке сообщения.';
+            messageElement.className = 'error active';
+        }
+        messageElement.style.display = 'flex';
+
+        // Скрываем сообщение через 3 секунды
+        setTimeout(function() {
+            messageElement.className = '';
+        }, 3000);
+    };
+
+    xhr.send(formData);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const servicesContainer = document.querySelectorAll("[data-services-item]");
     servicesContainer.forEach(service => {
