@@ -83,7 +83,7 @@ menuButtonEl.onclick = function () {
     body.classList.remove('unscroll')
 }
 
-document.getElementById('feedback__wrapper').addEventListener('submit', function(event) {
+document.getElementById('feedback-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Отмена стандартного отправления формы
 
     var formData = new FormData();
